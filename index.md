@@ -116,6 +116,9 @@
 
         <h3 id="pubs">Research</h3>
         <ul>
+          <li><strong>Steady-State Behavior of Constant-Stepsize Stochastic Approximation: Gaussian Approximation and Tail Bounds</strong>, with Zedong Wang, Yuyang Wang, Felix Wang, Yuzhou Wang, and Siva Theja Maguluri
+            <a href="https://arxiv.org/abs/2602.13960" target="_blank">[View Paper Here]</a>
+          </li>
           <li><strong>Sharp Inner Product Correlations for Hypercube Bijections</strong>, with Muchen Ju
             <a href="https://arxiv.org/abs/2509.00716" target="_blank">[View Paper Here]</a>
           </li>
