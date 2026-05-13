@@ -8,6 +8,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,500;8..60,650&display=swap" rel="stylesheet">
+  <script>
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
   <link rel="stylesheet" href="assets/css/site.css">
 </head>
 <body>
@@ -18,6 +21,7 @@
       <a href="publications.html">Publications</a>
       <a href="teaching.html">Teaching</a>
     </nav>
+    <button class="theme-toggle" type="button" aria-label="Switch color theme" aria-pressed="false">Dark</button>
   </header>
 
   <main class="page">
@@ -42,6 +46,7 @@
         <div class="contact-row" aria-label="Contact information">
           <a href="mailto:inarang@gatech.edu">inarang_at_gatech.edu</a>
           <a href="mailto:ijay.narang@gmail.com">ijay.narang_at_gmail.com</a>
+          <a href="https://scholar.google.com/scholar?q=%22Ijay+Narang%22" target="_blank" rel="noreferrer">Google Scholar</a>
         </div>
       </div>
       <aside class="profile">
@@ -105,5 +110,6 @@
     </section>
 
   </main>
+  <script src="assets/js/site.js"></script>
 </body>
 </html>
