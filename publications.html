@@ -9,6 +9,15 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,500;8..60,650&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/site.css">
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [["\\(", "\\)"]],
+        displayMath: [["\\[", "\\]"]]
+      }
+    };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <body>
   <header class="site-header">
@@ -33,9 +42,7 @@
             <button type="button" class="toggle" data-target="bib-stars">Bib</button>
             <a href="https://arxiv.org/abs/2602.15585" target="_blank" rel="noreferrer">arXiv</a>
           </div>
-          <div id="abs-stars" class="pub-detail">
-            We study the problem of detecting a planted star in the Erdős-Rényi random graph G(n,m), formulated as a hypothesis test. We determine the scaling window for critical detection in m in terms of the star size, and characterize the asymptotic total variation distance between the null and alternative hypotheses in this window. In the course of the proofs we show a condensation phase transition in the likelihood ratio that closely resembles that of the random energy model from spin glass theory.
-          </div>
+          <div id="abs-stars" class="pub-detail">We study the problem of detecting a planted star in the Erd&#337;s-R&eacute;nyi random graph \(G(n,m)\), formulated as a hypothesis test. We determine the scaling window for critical detection in \(m\) in terms of the star size, and characterize the asymptotic total variation distance between the null and alternative hypotheses in this window. In the course of the proofs we show a condensation phase transition in the likelihood ratio that closely resembles that of the random energy model from spin glass theory.</div>
           <pre id="bib-stars" class="pub-detail"><code>@article{NarangPerkinsWee2026plantedStar,
   title = {Optimal detection of planted stars via a random energy model},
   author = {Narang, Ijay and Perkins, Will and Wee, Timothy},
@@ -53,17 +60,7 @@
             <button type="button" class="toggle" data-target="bib-sa">Bib</button>
             <a href="https://arxiv.org/abs/2602.13960" target="_blank" rel="noreferrer">arXiv</a>
           </div>
-          <div id="abs-sa" class="pub-detail">
-            Constant-stepsize stochastic approximation (SA) is widely used in learning for computational efficiency. For a fixed stepsize, the iterates typically admit a stationary distribution that is rarely tractable. Prior work shows that as the stepsize alpha tends to zero, the centered-and-scaled steady state converges weakly to a Gaussian random vector. However, for fixed alpha, this weak convergence offers no usable error bound for approximating the steady-state by its Gaussian limit.
-            <br><br>
-            This paper provides explicit, non-asymptotic error bounds for fixed alpha. We first prove general-purpose theorems that bound the Wasserstein distance between the centered-scaled steady state and an appropriate Gaussian distribution, under regularity conditions for drift and moment conditions for noise. To ensure broad applicability, we cover both i.i.d. and Markovian noise models.
-            <br><br>
-            We then instantiate these theorems for three representative SA settings: (1) stochastic gradient descent (SGD) for smooth strongly convex objectives, (2) linear SA, and (3) contractive nonlinear SA. We obtain dimension- and stepsize-dependent, explicit bounds in Wasserstein distance of order alpha^{1/2} log(1/alpha) for small alpha.
-            <br><br>
-            Building on the Wasserstein approximation error, we further derive non-uniform Berry-Esseen-type tail bounds that compare the steady-state tail probability to Gaussian tails. We achieve an explicit error term that decays in both the deviation level and stepsize alpha. We adapt the same analysis for SGD beyond strongly convexity and study general convex objectives.
-            <br><br>
-            We identify a non-Gaussian (Gibbs) limiting law under the correct scaling, which is validated numerically, and provide a corresponding pre-limit Wasserstein error bound.
-          </div>
+          <div id="abs-sa" class="pub-detail">Constant-stepsize stochastic approximation (SA) is widely used in learning for computational efficiency. For a fixed stepsize, the iterates typically admit a stationary distribution that is rarely tractable. Prior work shows that as the stepsize \(\alpha \downarrow 0\), the centered-and-scaled steady state converges weakly to a Gaussian random vector. However, for fixed \(\alpha\), this weak convergence offers no usable error bound for approximating the steady-state by its Gaussian limit. This paper provides explicit, non-asymptotic error bounds for fixed \(\alpha\). We first prove general-purpose theorems that bound the Wasserstein distance between the centered-scaled steady state and an appropriate Gaussian distribution, under regularity conditions for drift and moment conditions for noise. To ensure broad applicability, we cover both i.i.d. and Markovian noise models. We then instantiate these theorems for three representative SA settings: (1) stochastic gradient descent (SGD) for smooth strongly convex objectives, (2) linear SA, and (3) contractive nonlinear SA. We obtain dimension- and stepsize-dependent, explicit bounds in Wasserstein distance of order \(\alpha^{1/2}\log(1/\alpha)\) for small \(\alpha\). Building on the Wasserstein approximation error, we further derive non-uniform Berry--Esseen-type tail bounds that compare the steady-state tail probability to Gaussian tails. We achieve an explicit error term that decays in both the deviation level and stepsize \(\alpha\). We adapt the same analysis for SGD beyond strongly convexity and study general convex objectives. We identify a non-Gaussian (Gibbs) limiting law under the correct scaling, which is validated numerically, and provide a corresponding pre-limit Wasserstein error bound.</div>
           <pre id="bib-sa" class="pub-detail"><code>@article{WangWangNarangWangWangMaguluri2026constantStepsize,
   title = {Steady-State Behavior of Constant-Stepsize Stochastic Approximation: Gaussian Approximation and Tail Bounds},
   author = {Wang, Zedong and Wang, Yuyang and Narang, Ijay and Wang, Felix and Wang, Yuzhou and Maguluri, Siva Theja},
@@ -86,11 +83,7 @@
             <button type="button" class="toggle" data-target="bib-hypercube">Bib</button>
             <a href="https://arxiv.org/abs/2509.00716" target="_blank" rel="noreferrer">arXiv</a>
           </div>
-          <div id="abs-hypercube" class="pub-detail">
-            We resolve a conjecture of Rob Morris concerning bijections on the hypercube. Specifically, we show that for any bijection f : {-1,1}^n to {-1,1}^n, the probability over x,y in {-1,1}^n that both &lt;x,y&gt; &gt;= 0 and &lt;f(x),f(y)&gt; &gt;= 0 is at least 1/4 - O(1/sqrt(n)), implying the same lower bound for the joint event under any two bijections.
-            <br><br>
-            Our proof proceeds by applying the spectral decomposition of the Hamming association scheme, which allows us to reformulate the problem as a linear program over the Birkhoff polytope. This makes it possible to isolate the contribution of the nontrivial spectrum, which we show is asymptotically negligible, leaving the dominant contribution arising from the principal eigenvalue.
-          </div>
+          <div id="abs-hypercube" class="pub-detail">We resolve a conjecture of Rob Morris concerning bijections on the hypercube. Specifically, we show that for any bijection \(f : \{-1,1\}^n \to \{-1,1\}^n\), \(\Pr_{x,y \in \{-1,1\}^n}\big[ \langle x,y \rangle \ge 0 \;\text{and}\; \langle f(x),f(y) \rangle \ge 0 \big] \ge \tfrac{1}{4} - O(1/\sqrt{n})\), implying the same lower bound for the joint event under any two bijections. Our proof proceeds by applying the spectral decomposition of the Hamming association scheme, which allows us to reformulate the problem as a linear program over the Birkhoff polytope. This makes it possible to isolate the contribution of the nontrivial spectrum, which we show is asymptotically negligible, leaving the dominant contribution arising from the principal eigenvalue.</div>
           <pre id="bib-hypercube" class="pub-detail"><code>@article{NarangJu2025hypercubeBijections,
   title = {Sharp Inner Product Correlations for Hypercube Bijections},
   author = {Narang, Ijay and Ju, Muchen},
@@ -102,7 +95,7 @@
     </section>
 
     <section class="pub-year">
-      <h2>Earlier</h2>
+      <h2>Undergraduate Work</h2>
       <ol class="publications">
         <li class="publication">
           <h3>On even-H-free Colorings</h3>
@@ -112,9 +105,7 @@
             <button type="button" class="toggle" data-target="bib-colorings">Bib</button>
             <a href="works/even_H_free_colorings.pdf" target="_blank" rel="noreferrer">PDF</a>
           </div>
-          <div id="abs-colorings" class="pub-detail">
-            Undergraduate research manuscript advised by Dr. Noga Alon.
-          </div>
+          <div id="abs-colorings" class="pub-detail">For a given graph \(H\), an edge-coloring \(C\) of the complete graph \(K_n\) is even-\(H\)-free if every copy of \(H\) intersects at least one color class with an odd number of edges. These colorings are motivated by the study of graph codes, which were introduced in earlier work. Even-\(H\)-free colorings exhibit interesting properties and are closely related to other problems in Ramsey Theory. The present short paper includes new results about the extremal properties of such colorings. Let \(g(n,H)\) be the minimum number of colors required in an even-\(H\)-free coloring of \(K_n\). Our main result is the identification of a class of graphs \(H\), namely forests of even stars satisfying appropriate size constraints, for which \(g(n,H)=\Theta(n^2)\).</div>
           <pre id="bib-colorings" class="pub-detail"><code>@misc{NarangEvenHFreeColorings,
   title = {On even-H-free Colorings},
   author = {Narang, Ijay},
@@ -130,9 +121,7 @@
             <button type="button" class="toggle" data-target="bib-thesis">Bib</button>
             <a href="works/thesis.pdf" target="_blank" rel="noreferrer">PDF</a>
           </div>
-          <div id="abs-thesis" class="pub-detail">
-            Undergraduate thesis advised by Dr. Pedro Paredes.
-          </div>
+          <div id="abs-thesis" class="pub-detail">Communication protocols and data storage necessitate the use of error-correcting codes, which inject redundancy into a bit-string to make it resilient against corruption. Desirable properties of such codes include distance, ensuring recoverability of the original message, and rate, capturing transmission efficiency. It is well known that expander graphs, sparse yet highly connected graphs, can be used to construct codes that achieve strong trade-offs between these parameters. Furthermore, the higher dimensional analog of expanders, high dimensional expanders, have also found useful applications in coding theory. Thus, this thesis studies this intersection of expanders, high dimensional expanders, and coding theory. Thematically, this paper can be viewed in two parts: the first is a survey of classical and recent ideas in this area, and the second presents new combinatorial constructions of expanding square and cubical complexes.</div>
           <pre id="bib-thesis" class="pub-detail"><code>@misc{Narang2024expandersCodingTheory,
   title = {On Expansion, High-Dimensional Expanders, and Applications in Coding Theory},
   author = {Narang, Ijay},
