@@ -60,14 +60,18 @@ a:hover {
 }
 
 .theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
   min-height: 34px;
   border: 1px solid var(--line);
   border-radius: 4px;
   background: var(--paper);
   color: var(--ink);
-  padding: 6px 12px;
+  padding: 0;
   font: inherit;
-  font-size: 14px;
+  font-size: 18px;
   line-height: 1.2;
   cursor: pointer;
 }

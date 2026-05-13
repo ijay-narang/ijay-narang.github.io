@@ -4,8 +4,10 @@ const setTheme = (theme) => {
   localStorage.setItem("theme", theme);
   if (themeToggle) {
     const isDark = theme === "dark";
-    themeToggle.textContent = isDark ? "Light" : "Dark";
+    themeToggle.textContent = isDark ? "☀" : "☾";
     themeToggle.setAttribute("aria-pressed", String(isDark));
+    themeToggle.setAttribute("aria-label", isDark ? "Switch to light theme" : "Switch to dark theme");
+    themeToggle.setAttribute("title", isDark ? "Switch to light theme" : "Switch to dark theme");
   }
 };
 
