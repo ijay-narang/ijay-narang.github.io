@@ -25,7 +25,7 @@
         <p class="eyebrow">ACO PhD Student, Georgia Tech</p>
         <h1>Ijay Narang</h1>
         <p>
-          I am a first-year PhD student in the Algorithms, Combinatorics, and Optimization (ACO) program within the School of Computing at Georgia Tech. I am interested in:
+          I am a first-year PhD student in the Algorithms, Combinatorics, and Optimization (ACO) program within the School of Computing at Georgia Tech, where I am advised by Dr. Will Perkins. I am interested in:
           <span class="interest">Applied Probability</span>, <span class="interest">Statistics</span>, and <span class="interest">Optimization</span>.
         </p>
         <p>
