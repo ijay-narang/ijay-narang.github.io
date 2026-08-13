@@ -204,6 +204,16 @@ a:hover {
   text-decoration: none;
 }
 
+.scholar-link {
+  gap: 7px;
+}
+
+.contact-icon {
+  width: 16px;
+  height: 16px;
+  flex: 0 0 auto;
+}
+
 .section {
   margin-top: 42px;
 }
