@@ -178,6 +178,10 @@ a:hover {
   margin-top: 26px;
 }
 
+.contact-row + p {
+  margin-top: 18px;
+}
+
 .contact-row a,
 .pub-actions a,
 .pub-actions button {
