@@ -245,6 +245,7 @@ a:hover {
   gap: 16px;
 }
 
+.research-direction,
 .featured-list article,
 .publication {
   background: var(--paper);
