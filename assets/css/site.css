@@ -222,6 +222,7 @@ a:hover {
   margin-top: 42px;
 }
 
+/* Research Direction styles are saved for later publication.
 .research-direction p {
   max-width: 75ch;
   margin: 0 0 18px;
@@ -230,6 +231,7 @@ a:hover {
 .research-direction p:last-child {
   margin-bottom: 0;
 }
+*/
 
 .section-heading h2,
 .pub-year h2 {
@@ -245,7 +247,7 @@ a:hover {
   gap: 16px;
 }
 
-.research-direction,
+/* .research-direction, */
 .featured-list article,
 .publication {
   background: var(--paper);
