@@ -33,44 +33,48 @@
     <button class="theme-toggle" type="button" aria-label="Switch color theme" aria-pressed="false" title="Switch color theme">☾</button>
   </header>
 
-  <main class="page narrow">
+  <main class="page">
     <section class="pub-year">
       <h2>Applied Probability &amp; Statistics</h2>
       <ol class="publications">
         <li class="publication">
-          <h3>Optimal detection of planted stars via a random energy model</h3>
-          <p class="authors"><strong>Ijay Narang</strong>, Will Perkins, and Timothy Wee</p>
-          <p class="venue">In submission, 2026</p>
-          <div class="pub-actions">
-            <button type="button" class="toggle" data-target="abs-stars">Abs</button>
-            <button type="button" class="toggle" data-target="bib-stars">Bib</button>
-            <a href="https://arxiv.org/abs/2602.15585" target="_blank" rel="noreferrer">arXiv</a>
-          </div>
-          <div id="abs-stars" class="pub-detail">We study the problem of detecting a planted star in the Erd&#337;s-R&eacute;nyi random graph \(G(n,m)\), formulated as a hypothesis test. We determine the scaling window for critical detection in \(m\) in terms of the star size, and characterize the asymptotic total variation distance between the null and alternative hypotheses in this window. In the course of the proofs we show a condensation phase transition in the likelihood ratio that closely resembles that of the random energy model from spin glass theory.</div>
-          <pre id="bib-stars" class="pub-detail"><code>@article{NarangPerkinsWee2026plantedStar,
+          <p class="venue"><span class="pub-status pub-status-submission">In submission</span> <span class="pub-date">2026</span></p>
+          <div class="pub-content">
+            <h3>Optimal detection of planted stars via a random energy model</h3>
+            <p class="authors"><strong>Ijay Narang</strong>, Will Perkins, and Timothy Wee</p>
+            <div class="pub-actions">
+              <button type="button" class="toggle" data-target="abs-stars">Abs</button>
+              <button type="button" class="toggle" data-target="bib-stars">Bib</button>
+              <a href="https://arxiv.org/abs/2602.15585" target="_blank" rel="noreferrer">arXiv</a>
+            </div>
+            <div id="abs-stars" class="pub-detail">We study the problem of detecting a planted star in the Erd&#337;s-R&eacute;nyi random graph \(G(n,m)\), formulated as a hypothesis test. We determine the scaling window for critical detection in \(m\) in terms of the star size, and characterize the asymptotic total variation distance between the null and alternative hypotheses in this window. In the course of the proofs we show a condensation phase transition in the likelihood ratio that closely resembles that of the random energy model from spin glass theory.</div>
+            <pre id="bib-stars" class="pub-detail"><code>@article{NarangPerkinsWee2026plantedStar,
   title = {Optimal detection of planted stars via a random energy model},
   author = {Narang, Ijay and Perkins, Will and Wee, Timothy},
   journal = {arXiv preprint arXiv:2602.15585},
   year = {2026}
 }</code></pre>
+          </div>
         </li>
 
         <li class="publication">
-          <h3>Steady-State Behavior of Constant-Stepsize Stochastic Approximation: Gaussian Approximation and Tail Bounds</h3>
-          <p class="authors">Zedong Wang, Yuyang Wang, <strong>Ijay Narang</strong>, Felix Wang, Yuzhou Wang, and Siva Theja Maguluri</p>
-          <p class="venue">ICML 2026</p>
-          <div class="pub-actions">
-            <button type="button" class="toggle" data-target="abs-sa">Abs</button>
-            <button type="button" class="toggle" data-target="bib-sa">Bib</button>
-            <a href="https://arxiv.org/abs/2602.13960" target="_blank" rel="noreferrer">arXiv</a>
-          </div>
-          <div id="abs-sa" class="pub-detail">Constant-stepsize stochastic approximation (SA) is widely used in learning for computational efficiency. For a fixed stepsize, the iterates typically admit a stationary distribution that is rarely tractable. Prior work shows that as the stepsize \(\alpha \downarrow 0\), the centered-and-scaled steady state converges weakly to a Gaussian random vector. However, for fixed \(\alpha\), this weak convergence offers no usable error bound for approximating the steady-state by its Gaussian limit. This paper provides explicit, non-asymptotic error bounds for fixed \(\alpha\). We first prove general-purpose theorems that bound the Wasserstein distance between the centered-scaled steady state and an appropriate Gaussian distribution, under regularity conditions for drift and moment conditions for noise. To ensure broad applicability, we cover both i.i.d. and Markovian noise models. We then instantiate these theorems for three representative SA settings: (1) stochastic gradient descent (SGD) for smooth strongly convex objectives, (2) linear SA, and (3) contractive nonlinear SA. We obtain dimension- and stepsize-dependent, explicit bounds in Wasserstein distance of order \(\alpha^{1/2}\log(1/\alpha)\) for small \(\alpha\). Building on the Wasserstein approximation error, we further derive non-uniform Berry--Esseen-type tail bounds that compare the steady-state tail probability to Gaussian tails. We achieve an explicit error term that decays in both the deviation level and stepsize \(\alpha\). We adapt the same analysis for SGD beyond strongly convexity and study general convex objectives. We identify a non-Gaussian (Gibbs) limiting law under the correct scaling, which is validated numerically, and provide a corresponding pre-limit Wasserstein error bound.</div>
-          <pre id="bib-sa" class="pub-detail"><code>@article{WangWangNarangWangWangMaguluri2026constantStepsize,
+          <p class="venue"><span class="pub-status pub-status-conference">ICML</span> <span class="pub-date">2026</span></p>
+          <div class="pub-content">
+            <h3>Steady-State Behavior of Constant-Stepsize Stochastic Approximation: Gaussian Approximation and Tail Bounds</h3>
+            <p class="authors">Zedong Wang, Yuyang Wang, <strong>Ijay Narang</strong>, Felix Wang, Yuzhou Wang, and Siva Theja Maguluri</p>
+            <div class="pub-actions">
+              <button type="button" class="toggle" data-target="abs-sa">Abs</button>
+              <button type="button" class="toggle" data-target="bib-sa">Bib</button>
+              <a href="https://arxiv.org/abs/2602.13960" target="_blank" rel="noreferrer">arXiv</a>
+            </div>
+            <div id="abs-sa" class="pub-detail">Constant-stepsize stochastic approximation (SA) is widely used in learning for computational efficiency. For a fixed stepsize, the iterates typically admit a stationary distribution that is rarely tractable. Prior work shows that as the stepsize \(\alpha \downarrow 0\), the centered-and-scaled steady state converges weakly to a Gaussian random vector. However, for fixed \(\alpha\), this weak convergence offers no usable error bound for approximating the steady-state by its Gaussian limit. This paper provides explicit, non-asymptotic error bounds for fixed \(\alpha\). We first prove general-purpose theorems that bound the Wasserstein distance between the centered-scaled steady state and an appropriate Gaussian distribution, under regularity conditions for drift and moment conditions for noise. To ensure broad applicability, we cover both i.i.d. and Markovian noise models. We then instantiate these theorems for three representative SA settings: (1) stochastic gradient descent (SGD) for smooth strongly convex objectives, (2) linear SA, and (3) contractive nonlinear SA. We obtain dimension- and stepsize-dependent, explicit bounds in Wasserstein distance of order \(\alpha^{1/2}\log(1/\alpha)\) for small \(\alpha\). Building on the Wasserstein approximation error, we further derive non-uniform Berry--Esseen-type tail bounds that compare the steady-state tail probability to Gaussian tails. We achieve an explicit error term that decays in both the deviation level and stepsize \(\alpha\). We adapt the same analysis for SGD beyond strongly convexity and study general convex objectives. We identify a non-Gaussian (Gibbs) limiting law under the correct scaling, which is validated numerically, and provide a corresponding pre-limit Wasserstein error bound.</div>
+            <pre id="bib-sa" class="pub-detail"><code>@article{WangWangNarangWangWangMaguluri2026constantStepsize,
   title = {Steady-State Behavior of Constant-Stepsize Stochastic Approximation: Gaussian Approximation and Tail Bounds},
   author = {Wang, Zedong and Wang, Yuyang and Narang, Ijay and Wang, Felix and Wang, Yuzhou and Maguluri, Siva Theja},
   journal = {arXiv preprint arXiv:2602.13960},
   year = {2026}
 }</code></pre>
+          </div>
         </li>
       </ol>
     </section>
@@ -79,75 +83,83 @@
       <h2>Theoretical Computer Science &amp; Combinatorics</h2>
       <ol class="publications">
         <li class="publication">
-          <h3>Structural Corrections to the Bethe Approximation of the Permanent</h3>
-          <p class="authors"><strong>Ijay Narang</strong> and Will Perkins</p>
-          <p class="venue">In submission, 2026</p>
-          <div class="pub-actions">
-            <button type="button" class="toggle" data-target="abs-structural-corrections-bethe">Abs</button>
-            <button type="button" class="toggle" data-target="bib-structural-corrections-bethe">Bib</button>
-            <a href="https://arxiv.org/abs/2608.31061" target="_blank" rel="noreferrer">arXiv</a>
-          </div>
-          <div id="abs-structural-corrections-bethe" class="pub-detail">We study deterministic approximation algorithms for the permanent of a nonnegative matrix through the Bethe permanent, an approximation computable in polynomial time. The tight analysis of Anari and Rezaei gives a universal comparison between the permanent and the Bethe permanent within a factor \((\sqrt 2)^n\). The simple example of the unweighted \(4\)-cycle \(C_4\) (or a union of disjoint \(C_4\)'s) shows that this bound is tight. We show that such \(4\)-cycle obstructions can be identified and exploited algorithmically. Given a Bethe optimizer, our algorithm identifies nearly isolated weighted \(2\times2\) blocks and peels off a vertex-disjoint family of them. If the total weighted correction is large, we can improve the Bethe approximation; if it is small, we show that the Bethe permanent is within a factor of \((\sqrt2 - \varepsilon)^n\) of the truth. Combining these facts, we obtain a deterministic polynomial time \((\sqrt2-\varepsilon)^n\)-approximation algorithm for the permanent of an arbitrary nonnegative \(n\times n\) matrix, where \(\varepsilon&gt;0\) is some absolute constant.</div>
-          <pre id="bib-structural-corrections-bethe" class="pub-detail"><code>@article{NarangPerkins2026structuralCorrectionsBethe,
+          <p class="venue"><span class="pub-status pub-status-submission">In submission</span> <span class="pub-date">2026</span></p>
+          <div class="pub-content">
+            <h3>Structural Corrections to the Bethe Approximation of the Permanent</h3>
+            <p class="authors"><strong>Ijay Narang</strong> and Will Perkins</p>
+            <div class="pub-actions">
+              <button type="button" class="toggle" data-target="abs-structural-corrections-bethe">Abs</button>
+              <button type="button" class="toggle" data-target="bib-structural-corrections-bethe">Bib</button>
+              <a href="https://arxiv.org/abs/2608.31061" target="_blank" rel="noreferrer">arXiv</a>
+            </div>
+            <div id="abs-structural-corrections-bethe" class="pub-detail">We study deterministic approximation algorithms for the permanent of a nonnegative matrix through the Bethe permanent, an approximation computable in polynomial time. The tight analysis of Anari and Rezaei gives a universal comparison between the permanent and the Bethe permanent within a factor \((\sqrt 2)^n\). The simple example of the unweighted \(4\)-cycle \(C_4\) (or a union of disjoint \(C_4\)'s) shows that this bound is tight. We show that such \(4\)-cycle obstructions can be identified and exploited algorithmically. Given a Bethe optimizer, our algorithm identifies nearly isolated weighted \(2\times2\) blocks and peels off a vertex-disjoint family of them. If the total weighted correction is large, we can improve the Bethe approximation; if it is small, we show that the Bethe permanent is within a factor of \((\sqrt2 - \varepsilon)^n\) of the truth. Combining these facts, we obtain a deterministic polynomial time \((\sqrt2-\varepsilon)^n\)-approximation algorithm for the permanent of an arbitrary nonnegative \(n\times n\) matrix, where \(\varepsilon&gt;0\) is some absolute constant.</div>
+            <pre id="bib-structural-corrections-bethe" class="pub-detail"><code>@article{NarangPerkins2026structuralCorrectionsBethe,
   title = {Structural Corrections to the Bethe Approximation of the Permanent},
   author = {Narang, Ijay and Perkins, Will},
   journal = {arXiv preprint arXiv:2608.31061},
   year = {2026}
 }</code></pre>
+          </div>
         </li>
 
         <li class="publication">
-          <h3>The Hard-Core Model on Bipartite Spectral Expanders: Counting and Sampling at All Fugacities</h3>
-          <p class="authors"><strong>Ijay Narang</strong> and Will Perkins</p>
-          <p class="venue">In submission, 2026</p>
-          <div class="pub-actions">
-            <button type="button" class="toggle" data-target="abs-hard-core-spectral-expanders">Abs</button>
-            <button type="button" class="toggle" data-target="bib-hard-core-spectral-expanders">Bib</button>
-            <a href="https://arxiv.org/abs/2608.03848" target="_blank" rel="noreferrer">arXiv</a>
-          </div>
-          <div id="abs-hard-core-spectral-expanders" class="pub-detail">We study approximate counting and sampling algorithms for the hard-core model on \(\Delta\)-regular bipartite graphs under a spectral expansion condition. Let \(M_G\) be the biadjacency matrix of \(G\). For every fixed \(\xi\in(0,1)\), we give an FPRAS for the hard-core partition function and an efficient approximate sampler whenever \(\lambda\leq \frac{1-\xi}{\sigma_2(M_G)}\). The main idea is to introduce a family of quadratic tilts in the left-right occupation imbalance and show that each tilted measure can be sampled efficiently using Glauber dynamics. A discrete Gaussian identity expresses the original hard-core model as an exact positive mixture of these tilted measures; truncation and simulated annealing then yield efficient counting and sampling algorithms. For the complementary high-fugacity regime, we refine the polymer-model approach and show that the required phase-dominance and cluster expansion conditions follow from the singular-spectrum bound alone. Combining the two regimes, we obtain efficient approximate counting and sampling at every fugacity \(\lambda&gt;0\) whenever \(\sigma_2(M_G)\leq c\left(\frac{\Delta^2}{\log(\mathrm e\Delta)}\right)^{1/3}\) for an absolute constant \(c&gt;0\). In particular, this recovers all-fugacity algorithms for random \(\Delta\)-regular bipartite graphs for all sufficiently large \(\Delta\), while providing an efficiently verifiable certificate of their success on a given instance.</div>
-          <pre id="bib-hard-core-spectral-expanders" class="pub-detail"><code>@article{NarangPerkins2026hardCoreSpectralExpanders,
+          <p class="venue"><span class="pub-status pub-status-submission">In submission</span> <span class="pub-date">2026</span></p>
+          <div class="pub-content">
+            <h3>The Hard-Core Model on Bipartite Spectral Expanders: Counting and Sampling at All Fugacities</h3>
+            <p class="authors"><strong>Ijay Narang</strong> and Will Perkins</p>
+            <div class="pub-actions">
+              <button type="button" class="toggle" data-target="abs-hard-core-spectral-expanders">Abs</button>
+              <button type="button" class="toggle" data-target="bib-hard-core-spectral-expanders">Bib</button>
+              <a href="https://arxiv.org/abs/2608.03848" target="_blank" rel="noreferrer">arXiv</a>
+            </div>
+            <div id="abs-hard-core-spectral-expanders" class="pub-detail">We study approximate counting and sampling algorithms for the hard-core model on \(\Delta\)-regular bipartite graphs under a spectral expansion condition. Let \(M_G\) be the biadjacency matrix of \(G\). For every fixed \(\xi\in(0,1)\), we give an FPRAS for the hard-core partition function and an efficient approximate sampler whenever \(\lambda\leq \frac{1-\xi}{\sigma_2(M_G)}\). The main idea is to introduce a family of quadratic tilts in the left-right occupation imbalance and show that each tilted measure can be sampled efficiently using Glauber dynamics. A discrete Gaussian identity expresses the original hard-core model as an exact positive mixture of these tilted measures; truncation and simulated annealing then yield efficient counting and sampling algorithms. For the complementary high-fugacity regime, we refine the polymer-model approach and show that the required phase-dominance and cluster expansion conditions follow from the singular-spectrum bound alone. Combining the two regimes, we obtain efficient approximate counting and sampling at every fugacity \(\lambda&gt;0\) whenever \(\sigma_2(M_G)\leq c\left(\frac{\Delta^2}{\log(\mathrm e\Delta)}\right)^{1/3}\) for an absolute constant \(c&gt;0\). In particular, this recovers all-fugacity algorithms for random \(\Delta\)-regular bipartite graphs for all sufficiently large \(\Delta\), while providing an efficiently verifiable certificate of their success on a given instance.</div>
+            <pre id="bib-hard-core-spectral-expanders" class="pub-detail"><code>@article{NarangPerkins2026hardCoreSpectralExpanders,
   title = {The Hard-Core Model on Bipartite Spectral Expanders: Counting and Sampling at All Fugacities},
   author = {Narang, Ijay and Perkins, Will},
   journal = {arXiv preprint arXiv:2608.03848},
   year = {2026}
 }</code></pre>
+          </div>
         </li>
 
         <li class="publication">
-          <h3>Computational Thresholds for Balanced and Fixed-Slice Independent Sets in Bipartite Graphs</h3>
-          <p class="authors"><strong>Ijay Narang</strong>, Will Perkins, Yuzhou Wang, and Timothy L. H. Wee</p>
-          <p class="venue">In submission, 2026</p>
-          <div class="pub-actions">
-            <button type="button" class="toggle" data-target="abs-bipartite-independent-sets">Abs</button>
-            <button type="button" class="toggle" data-target="bib-bipartite-independent-sets">Bib</button>
-            <a href="https://arxiv.org/abs/2608.02503" target="_blank" rel="noreferrer">arXiv</a>
-          </div>
-          <div id="abs-bipartite-independent-sets" class="pub-detail">Motivated by recent work of Kocurek, Oveis Gharan, and Tjowasi, which gives an efficient sampling algorithm for the hard-core model on random regular bipartite graphs by decomposing into fixed-size slices, we study the worst-case tractability of approximate counting and sampling of fixed-size slices for bipartite independent set problems. Let \(G=(L\sqcup R,E)\) be a bipartite graph with \(|L|=|R|=n\) and maximum degree \(\Delta\). The fixed-slice problem asks to sample uniformly from independent sets satisfying \(|I\cap L|=\alpha_L n\) and \(|I\cap R|=\alpha_R n\). We show that if the overall density \(\alpha\) lies in the interval \((\frac{1}{\Delta}, \tfrac{1}{2})\), and the densities on the two sides are more balanced than the typical phase densities of a random \(\Delta\)-regular bipartite graph, then there is no FPRAS or efficient sampling scheme unless \(\mathbf{NP}=\mathbf{RP}\). We then study a related fugacity model in which the densities are not fixed, but the independent set is required to be balanced between the two sides of the bipartition. For \(\lambda&gt;0\), the balanced hard-core model is the ordinary hard-core model with fugacity \(\lambda\), conditioned on the event \(|I\cap L|=|I\cap R|\). We prove that this model has the same computational threshold as the hard-core model on general bounded-degree graphs. That is, for every fixed \(\Delta\geq 3\), if \(\lambda&lt;\lambda_c(\Delta)\), then the balanced partition function admits an FPTAS and the balanced hard-core distribution admits an efficient sampling scheme. Conversely, if \(\lambda&gt;\lambda_c(\Delta)\), then no FPRAS or efficient sampler exists on this graph class unless \(\mathbf{NP}=\mathbf{RP}\).</div>
-          <pre id="bib-bipartite-independent-sets" class="pub-detail"><code>@article{NarangPerkinsWangWee2026bipartiteIndependentSets,
+          <p class="venue"><span class="pub-status pub-status-submission">In submission</span> <span class="pub-date">2026</span></p>
+          <div class="pub-content">
+            <h3>Computational Thresholds for Balanced and Fixed-Slice Independent Sets in Bipartite Graphs</h3>
+            <p class="authors"><strong>Ijay Narang</strong>, Will Perkins, Yuzhou Wang, and Timothy L. H. Wee</p>
+            <div class="pub-actions">
+              <button type="button" class="toggle" data-target="abs-bipartite-independent-sets">Abs</button>
+              <button type="button" class="toggle" data-target="bib-bipartite-independent-sets">Bib</button>
+              <a href="https://arxiv.org/abs/2608.02503" target="_blank" rel="noreferrer">arXiv</a>
+            </div>
+            <div id="abs-bipartite-independent-sets" class="pub-detail">Motivated by recent work of Kocurek, Oveis Gharan, and Tjowasi, which gives an efficient sampling algorithm for the hard-core model on random regular bipartite graphs by decomposing into fixed-size slices, we study the worst-case tractability of approximate counting and sampling of fixed-size slices for bipartite independent set problems. Let \(G=(L\sqcup R,E)\) be a bipartite graph with \(|L|=|R|=n\) and maximum degree \(\Delta\). The fixed-slice problem asks to sample uniformly from independent sets satisfying \(|I\cap L|=\alpha_L n\) and \(|I\cap R|=\alpha_R n\). We show that if the overall density \(\alpha\) lies in the interval \((\frac{1}{\Delta}, \tfrac{1}{2})\), and the densities on the two sides are more balanced than the typical phase densities of a random \(\Delta\)-regular bipartite graph, then there is no FPRAS or efficient sampling scheme unless \(\mathbf{NP}=\mathbf{RP}\). We then study a related fugacity model in which the densities are not fixed, but the independent set is required to be balanced between the two sides of the bipartition. For \(\lambda&gt;0\), the balanced hard-core model is the ordinary hard-core model with fugacity \(\lambda\), conditioned on the event \(|I\cap L|=|I\cap R|\). We prove that this model has the same computational threshold as the hard-core model on general bounded-degree graphs. That is, for every fixed \(\Delta\geq 3\), if \(\lambda&lt;\lambda_c(\Delta)\), then the balanced partition function admits an FPTAS and the balanced hard-core distribution admits an efficient sampling scheme. Conversely, if \(\lambda&gt;\lambda_c(\Delta)\), then no FPRAS or efficient sampler exists on this graph class unless \(\mathbf{NP}=\mathbf{RP}\).</div>
+            <pre id="bib-bipartite-independent-sets" class="pub-detail"><code>@article{NarangPerkinsWangWee2026bipartiteIndependentSets,
   title = {Computational Thresholds for Balanced and Fixed-Slice Independent Sets in Bipartite Graphs},
   author = {Narang, Ijay and Perkins, Will and Wang, Yuzhou and Wee, Timothy L. H.},
   journal = {arXiv preprint arXiv:2608.02503},
   year = {2026}
 }</code></pre>
+          </div>
         </li>
 
         <li class="publication">
-          <h3>Schrijver Number Quasi-Tensorization and Multicolor Ramsey Bounds via Robust OR Polynomials</h3>
-          <p class="authors"><strong>Ijay Narang</strong> and Yukai Tang</p>
-          <p class="venue">In submission, 2026</p>
-          <div class="pub-actions">
-            <button type="button" class="toggle" data-target="abs-schrijver">Abs</button>
-            <button type="button" class="toggle" data-target="bib-schrijver">Bib</button>
-            <a href="https://arxiv.org/abs/2607.25023" target="_blank" rel="noreferrer">arXiv</a>
-          </div>
-          <div id="abs-schrijver" class="pub-detail">We introduce a robust OR polynomial framework for composing positive semidefinite certificates across OR constraints. We demonstrate the power of this method in two applications. The first is on acute-free families. A set \(\mathcal F=\{(x_i^{(1)},\ldots,x_i^{(r)})\}_{i=1}^M \subseteq (S^{n-1})^r\) is \(r\)-way acute-free if, for every \(i\neq j\), there is a coordinate \(t\in[r]\) such that \(\langle x_i^{(t)},x_j^{(t)}\rangle\leq 0\). We write \(M_r(n)\) for the maximum size of such a set, and \(M_r^{\pm}(n)\) for the hypercube restriction. On the hypercube, \(r\)-way acute-free sets are independent sets for some strong power graph \(G_n^{\boxtimes r}\). The Lov&aacute;sz theta number \(\vartheta(G_n)\) is multiplicative but exponentially loose, whereas the Schrijver number \(\vartheta'(G_n)\) gives the correct order, but is not multiplicative. We bypass this obstruction by proving a general quasi-tensorization result for the Schrijver number. That is, for every collection of graphs \(G_1,\ldots,G_r\) satisfying \(\vartheta'(G_i)\geq 2\), there is an absolute constant \(C\) such that \(\vartheta'(G_1\boxtimes\cdots\boxtimes G_r)\leq\prod_{i=1}^r\vartheta'(G_i)^{C\log r\log\vartheta'(G_i)}\). Applying this result gives that \(M_r^{\pm}(n)\leq M_r(n)\leq(2n)^{C_0r\log r\log(2n)}\) for some absolute constant \(C_0\). The second application is on multicolor Ramsey numbers. The \(r\)-color Ramsey number \(R_r(k)\) is the minimum \(n\) such that every \(r\)-coloring of the edges of the complete graph on \(n\) vertices contains a monochromatic copy of \(K_k\). In a breakthrough result, Balister et al. showed that \(R_r(k)\leq\exp(-\Omega(k/r^{12}))r^{rk}\) via a geometric lemma. By improving the \(r\) dependency in their geometric lemma via the OR polynomial framework, we prove that \(R_r(k)\leq\exp(-\Omega(k/(r^9(\log r)^6)))r^{rk}\).</div>
-          <pre id="bib-schrijver" class="pub-detail"><code>@article{NarangTang2026schrijverQuasiTensorization,
+          <p class="venue"><span class="pub-status pub-status-submission">In submission</span> <span class="pub-date">2026</span></p>
+          <div class="pub-content">
+            <h3>Schrijver Number Quasi-Tensorization and Multicolor Ramsey Bounds via Robust OR Polynomials</h3>
+            <p class="authors"><strong>Ijay Narang</strong> and Yukai Tang</p>
+            <div class="pub-actions">
+              <button type="button" class="toggle" data-target="abs-schrijver">Abs</button>
+              <button type="button" class="toggle" data-target="bib-schrijver">Bib</button>
+              <a href="https://arxiv.org/abs/2607.25023" target="_blank" rel="noreferrer">arXiv</a>
+            </div>
+            <div id="abs-schrijver" class="pub-detail">We introduce a robust OR polynomial framework for composing positive semidefinite certificates across OR constraints. We demonstrate the power of this method in two applications. The first is on acute-free families. A set \(\mathcal F=\{(x_i^{(1)},\ldots,x_i^{(r)})\}_{i=1}^M \subseteq (S^{n-1})^r\) is \(r\)-way acute-free if, for every \(i\neq j\), there is a coordinate \(t\in[r]\) such that \(\langle x_i^{(t)},x_j^{(t)}\rangle\leq 0\). We write \(M_r(n)\) for the maximum size of such a set, and \(M_r^{\pm}(n)\) for the hypercube restriction. On the hypercube, \(r\)-way acute-free sets are independent sets for some strong power graph \(G_n^{\boxtimes r}\). The Lov&aacute;sz theta number \(\vartheta(G_n)\) is multiplicative but exponentially loose, whereas the Schrijver number \(\vartheta'(G_n)\) gives the correct order, but is not multiplicative. We bypass this obstruction by proving a general quasi-tensorization result for the Schrijver number. That is, for every collection of graphs \(G_1,\ldots,G_r\) satisfying \(\vartheta'(G_i)\geq 2\), there is an absolute constant \(C\) such that \(\vartheta'(G_1\boxtimes\cdots\boxtimes G_r)\leq\prod_{i=1}^r\vartheta'(G_i)^{C\log r\log\vartheta'(G_i)}\). Applying this result gives that \(M_r^{\pm}(n)\leq M_r(n)\leq(2n)^{C_0r\log r\log(2n)}\) for some absolute constant \(C_0\). The second application is on multicolor Ramsey numbers. The \(r\)-color Ramsey number \(R_r(k)\) is the minimum \(n\) such that every \(r\)-coloring of the edges of the complete graph on \(n\) vertices contains a monochromatic copy of \(K_k\). In a breakthrough result, Balister et al. showed that \(R_r(k)\leq\exp(-\Omega(k/r^{12}))r^{rk}\) via a geometric lemma. By improving the \(r\) dependency in their geometric lemma via the OR polynomial framework, we prove that \(R_r(k)\leq\exp(-\Omega(k/(r^9(\log r)^6)))r^{rk}\).</div>
+            <pre id="bib-schrijver" class="pub-detail"><code>@article{NarangTang2026schrijverQuasiTensorization,
   title = {Schrijver Number Quasi-Tensorization and Multicolor Ramsey Bounds via Robust {OR} Polynomials},
   author = {Narang, Ijay and Tang, Yukai},
   journal = {arXiv preprint arXiv:2607.25023},
   year = {2026}
 }</code></pre>
+          </div>
         </li>
       </ol>
     </section>
@@ -156,53 +168,61 @@
       <h2>Undergraduate Research</h2>
       <ol class="publications">
         <li class="publication">
-          <h3>Sharp Inner Product Correlations for Hypercube Bijections</h3>
-          <p class="authors"><strong>Ijay Narang</strong> and Muchen Ju</p>
-          <p class="venue">In submission, 2025</p>
-          <div class="pub-actions">
-            <button type="button" class="toggle" data-target="abs-hypercube">Abs</button>
-            <button type="button" class="toggle" data-target="bib-hypercube">Bib</button>
-            <a href="https://arxiv.org/abs/2509.00716" target="_blank" rel="noreferrer">arXiv</a>
-          </div>
-          <div id="abs-hypercube" class="pub-detail">We resolve a conjecture of Rob Morris concerning bijections on the hypercube. Specifically, we show that for any bijection \(f : \{-1,1\}^n \to \{-1,1\}^n\), \(\Pr_{x,y \in \{-1,1\}^n}\big[ \langle x,y \rangle \ge 0 \;\text{and}\; \langle f(x),f(y) \rangle \ge 0 \big] \ge \tfrac{1}{4} - O(1/\sqrt{n})\), implying the same lower bound for the joint event under any two bijections. Our proof proceeds by applying the spectral decomposition of the Hamming association scheme, which allows us to reformulate the problem as a linear program over the Birkhoff polytope. This makes it possible to isolate the contribution of the nontrivial spectrum, which we show is asymptotically negligible, leaving the dominant contribution arising from the principal eigenvalue.</div>
-          <pre id="bib-hypercube" class="pub-detail"><code>@article{NarangJu2025hypercubeBijections,
+          <p class="venue"><span class="pub-status pub-status-submission">In submission</span> <span class="pub-date">2025</span></p>
+          <div class="pub-content">
+            <h3>Sharp Inner Product Correlations for Hypercube Bijections</h3>
+            <p class="authors"><strong>Ijay Narang</strong> and Muchen Ju</p>
+            <div class="pub-actions">
+              <button type="button" class="toggle" data-target="abs-hypercube">Abs</button>
+              <button type="button" class="toggle" data-target="bib-hypercube">Bib</button>
+              <a href="https://arxiv.org/abs/2509.00716" target="_blank" rel="noreferrer">arXiv</a>
+            </div>
+            <div id="abs-hypercube" class="pub-detail">We resolve a conjecture of Rob Morris concerning bijections on the hypercube. Specifically, we show that for any bijection \(f : \{-1,1\}^n \to \{-1,1\}^n\), \(\Pr_{x,y \in \{-1,1\}^n}\big[ \langle x,y \rangle \ge 0 \;\text{and}\; \langle f(x),f(y) \rangle \ge 0 \big] \ge \tfrac{1}{4} - O(1/\sqrt{n})\), implying the same lower bound for the joint event under any two bijections. Our proof proceeds by applying the spectral decomposition of the Hamming association scheme, which allows us to reformulate the problem as a linear program over the Birkhoff polytope. This makes it possible to isolate the contribution of the nontrivial spectrum, which we show is asymptotically negligible, leaving the dominant contribution arising from the principal eigenvalue.</div>
+            <pre id="bib-hypercube" class="pub-detail"><code>@article{NarangJu2025hypercubeBijections,
   title = {Sharp Inner Product Correlations for Hypercube Bijections},
   author = {Narang, Ijay and Ju, Muchen},
   journal = {arXiv preprint arXiv:2509.00716},
   year = {2025}
 }</code></pre>
+          </div>
         </li>
 
         <li class="publication">
-          <h3>On even-H-free Colorings</h3>
-          <p class="authors"><strong>Ijay Narang</strong>. Advised by Dr. Noga Alon</p>
-          <div class="pub-actions">
-            <button type="button" class="toggle" data-target="abs-colorings">Abs</button>
-            <button type="button" class="toggle" data-target="bib-colorings">Bib</button>
-            <a href="works/even_H_free_colorings.pdf" target="_blank" rel="noreferrer">PDF</a>
-          </div>
-          <div id="abs-colorings" class="pub-detail">For a given graph \(H\), an edge-coloring \(C\) of the complete graph \(K_n\) is even-\(H\)-free if every copy of \(H\) intersects at least one color class with an odd number of edges. These colorings are motivated by the study of graph codes, which were introduced in earlier work. Even-\(H\)-free colorings exhibit interesting properties and are closely related to other problems in Ramsey Theory. The present short paper includes new results about the extremal properties of such colorings. Let \(g(n,H)\) be the minimum number of colors required in an even-\(H\)-free coloring of \(K_n\). Our main result is the identification of a class of graphs \(H\), namely forests of even stars satisfying appropriate size constraints, for which \(g(n,H)=\Theta(n^2)\).</div>
-          <pre id="bib-colorings" class="pub-detail"><code>@misc{NarangEvenHFreeColorings,
+          <p class="venue"><span class="pub-status pub-status-research">Paper</span></p>
+          <div class="pub-content">
+            <h3>On even-H-free Colorings</h3>
+            <p class="authors"><strong>Ijay Narang</strong>. Advised by Dr. Noga Alon</p>
+            <div class="pub-actions">
+              <button type="button" class="toggle" data-target="abs-colorings">Abs</button>
+              <button type="button" class="toggle" data-target="bib-colorings">Bib</button>
+              <a href="works/even_H_free_colorings.pdf" target="_blank" rel="noreferrer">PDF</a>
+            </div>
+            <div id="abs-colorings" class="pub-detail">For a given graph \(H\), an edge-coloring \(C\) of the complete graph \(K_n\) is even-\(H\)-free if every copy of \(H\) intersects at least one color class with an odd number of edges. These colorings are motivated by the study of graph codes, which were introduced in earlier work. Even-\(H\)-free colorings exhibit interesting properties and are closely related to other problems in Ramsey Theory. The present short paper includes new results about the extremal properties of such colorings. Let \(g(n,H)\) be the minimum number of colors required in an even-\(H\)-free coloring of \(K_n\). Our main result is the identification of a class of graphs \(H\), namely forests of even stars satisfying appropriate size constraints, for which \(g(n,H)=\Theta(n^2)\).</div>
+            <pre id="bib-colorings" class="pub-detail"><code>@misc{NarangEvenHFreeColorings,
   title = {On even-H-free Colorings},
   author = {Narang, Ijay},
   note = {Advised by Dr. Noga Alon}
 }</code></pre>
+          </div>
         </li>
 
         <li class="publication">
-          <h3>On Expansion, High-Dimensional Expanders, and Applications in Coding Theory</h3>
-          <p class="authors"><strong>Ijay Narang</strong>. Undergraduate Thesis. Advised by Dr. Pedro Paredes</p>
-          <div class="pub-actions">
-            <button type="button" class="toggle" data-target="abs-thesis">Abs</button>
-            <button type="button" class="toggle" data-target="bib-thesis">Bib</button>
-            <a href="works/thesis.pdf" target="_blank" rel="noreferrer">PDF</a>
-          </div>
-          <div id="abs-thesis" class="pub-detail">Communication protocols and data storage necessitate the use of error-correcting codes, which inject redundancy into a bit-string to make it resilient against corruption. Desirable properties of such codes include distance, ensuring recoverability of the original message, and rate, capturing transmission efficiency. It is well known that expander graphs, sparse yet highly connected graphs, can be used to construct codes that achieve strong trade-offs between these parameters. Furthermore, the higher dimensional analog of expanders, high dimensional expanders, have also found useful applications in coding theory. Thus, this thesis studies this intersection of expanders, high dimensional expanders, and coding theory. Thematically, this paper can be viewed in two parts: the first is a survey of classical and recent ideas in this area, and the second presents new combinatorial constructions of expanding square and cubical complexes.</div>
-          <pre id="bib-thesis" class="pub-detail"><code>@misc{Narang2024expandersCodingTheory,
+          <p class="venue"><span class="pub-status pub-status-research">Thesis</span></p>
+          <div class="pub-content">
+            <h3>On Expansion, High-Dimensional Expanders, and Applications in Coding Theory</h3>
+            <p class="authors"><strong>Ijay Narang</strong>. Undergraduate Thesis. Advised by Dr. Pedro Paredes</p>
+            <div class="pub-actions">
+              <button type="button" class="toggle" data-target="abs-thesis">Abs</button>
+              <button type="button" class="toggle" data-target="bib-thesis">Bib</button>
+              <a href="works/thesis.pdf" target="_blank" rel="noreferrer">PDF</a>
+            </div>
+            <div id="abs-thesis" class="pub-detail">Communication protocols and data storage necessitate the use of error-correcting codes, which inject redundancy into a bit-string to make it resilient against corruption. Desirable properties of such codes include distance, ensuring recoverability of the original message, and rate, capturing transmission efficiency. It is well known that expander graphs, sparse yet highly connected graphs, can be used to construct codes that achieve strong trade-offs between these parameters. Furthermore, the higher dimensional analog of expanders, high dimensional expanders, have also found useful applications in coding theory. Thus, this thesis studies this intersection of expanders, high dimensional expanders, and coding theory. Thematically, this paper can be viewed in two parts: the first is a survey of classical and recent ideas in this area, and the second presents new combinatorial constructions of expanding square and cubical complexes.</div>
+            <pre id="bib-thesis" class="pub-detail"><code>@misc{Narang2024expandersCodingTheory,
   title = {On Expansion, High-Dimensional Expanders, and Applications in Coding Theory},
   author = {Narang, Ijay},
   note = {Undergraduate thesis, advised by Dr. Pedro Paredes}
 }</code></pre>
+          </div>
         </li>
       </ol>
     </section>
