@@ -334,8 +334,12 @@ a:hover {
   margin: 24px 0;
 }
 
+.pub-year + .pub-year {
+  margin-top: 56px;
+}
+
 .pub-year h2 {
-  margin-bottom: 12px;
+  margin-bottom: 28px;
 }
 
 .publications {
@@ -484,6 +488,10 @@ code {
 }
 
 @media (max-width: 600px) {
+  .pub-year + .pub-year {
+    margin-top: 48px;
+  }
+
   .featured-list article,
   .publication {
     grid-template-columns: minmax(0, 1fr);
