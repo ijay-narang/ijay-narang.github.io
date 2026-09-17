@@ -81,87 +81,95 @@
 
     <section class="pub-year">
       <h2>Theoretical Computer Science &amp; Combinatorics</h2>
-      <ol class="publications">
-        <li class="publication">
-          <p class="venue"><span class="pub-status pub-status-submission">In submission</span> <span class="pub-date">2026</span></p>
-          <div class="pub-content">
-            <h3>Structural Corrections to the Bethe Approximation of the Permanent</h3>
-            <p class="authors"><strong>Ijay Narang</strong> and Will Perkins</p>
-            <div class="pub-actions">
-              <button type="button" class="toggle" data-target="abs-structural-corrections-bethe">Abs</button>
-              <button type="button" class="toggle" data-target="bib-structural-corrections-bethe">Bib</button>
-              <a href="https://arxiv.org/abs/2608.31061" target="_blank" rel="noreferrer">arXiv</a>
-            </div>
-            <div id="abs-structural-corrections-bethe" class="pub-detail">We study deterministic approximation algorithms for the permanent of a nonnegative matrix through the Bethe permanent, an approximation computable in polynomial time. The tight analysis of Anari and Rezaei gives a universal comparison between the permanent and the Bethe permanent within a factor \((\sqrt 2)^n\). The simple example of the unweighted \(4\)-cycle \(C_4\) (or a union of disjoint \(C_4\)'s) shows that this bound is tight. We show that such \(4\)-cycle obstructions can be identified and exploited algorithmically. Given a Bethe optimizer, our algorithm identifies nearly isolated weighted \(2\times2\) blocks and peels off a vertex-disjoint family of them. If the total weighted correction is large, we can improve the Bethe approximation; if it is small, we show that the Bethe permanent is within a factor of \((\sqrt2 - \varepsilon)^n\) of the truth. Combining these facts, we obtain a deterministic polynomial time \((\sqrt2-\varepsilon)^n\)-approximation algorithm for the permanent of an arbitrary nonnegative \(n\times n\) matrix, where \(\varepsilon&gt;0\) is some absolute constant.</div>
-            <pre id="bib-structural-corrections-bethe" class="pub-detail"><code>@article{NarangPerkins2026structuralCorrectionsBethe,
+      <section class="pub-subsection" aria-labelledby="tcs-optimization">
+        <h3 id="tcs-optimization">Optimization</h3>
+        <ol class="publications">
+          <li class="publication">
+            <p class="venue"><span class="pub-status pub-status-submission">In submission</span> <span class="pub-date">2026</span></p>
+            <div class="pub-content">
+              <h4>Structural Corrections to the Bethe Approximation of the Permanent</h4>
+              <p class="authors"><strong>Ijay Narang</strong> and Will Perkins</p>
+              <div class="pub-actions">
+                <button type="button" class="toggle" data-target="abs-structural-corrections-bethe">Abs</button>
+                <button type="button" class="toggle" data-target="bib-structural-corrections-bethe">Bib</button>
+                <a href="https://arxiv.org/abs/2608.31061" target="_blank" rel="noreferrer">arXiv</a>
+              </div>
+              <div id="abs-structural-corrections-bethe" class="pub-detail">We study deterministic approximation algorithms for the permanent of a nonnegative matrix through the Bethe permanent, an approximation computable in polynomial time. The tight analysis of Anari and Rezaei gives a universal comparison between the permanent and the Bethe permanent within a factor \((\sqrt 2)^n\). The simple example of the unweighted \(4\)-cycle \(C_4\) (or a union of disjoint \(C_4\)'s) shows that this bound is tight. We show that such \(4\)-cycle obstructions can be identified and exploited algorithmically. Given a Bethe optimizer, our algorithm identifies nearly isolated weighted \(2\times2\) blocks and peels off a vertex-disjoint family of them. If the total weighted correction is large, we can improve the Bethe approximation; if it is small, we show that the Bethe permanent is within a factor of \((\sqrt2 - \varepsilon)^n\) of the truth. Combining these facts, we obtain a deterministic polynomial time \((\sqrt2-\varepsilon)^n\)-approximation algorithm for the permanent of an arbitrary nonnegative \(n\times n\) matrix, where \(\varepsilon&gt;0\) is some absolute constant.</div>
+              <pre id="bib-structural-corrections-bethe" class="pub-detail"><code>@article{NarangPerkins2026structuralCorrectionsBethe,
   title = {Structural Corrections to the Bethe Approximation of the Permanent},
   author = {Narang, Ijay and Perkins, Will},
   journal = {arXiv preprint arXiv:2608.31061},
   year = {2026}
 }</code></pre>
-          </div>
-        </li>
-
-        <li class="publication">
-          <p class="venue"><span class="pub-status pub-status-submission">In submission</span> <span class="pub-date">2026</span></p>
-          <div class="pub-content">
-            <h3>The Hard-Core Model on Bipartite Spectral Expanders: Counting and Sampling at All Fugacities</h3>
-            <p class="authors"><strong>Ijay Narang</strong> and Will Perkins</p>
-            <div class="pub-actions">
-              <button type="button" class="toggle" data-target="abs-hard-core-spectral-expanders">Abs</button>
-              <button type="button" class="toggle" data-target="bib-hard-core-spectral-expanders">Bib</button>
-              <a href="https://arxiv.org/abs/2608.03848" target="_blank" rel="noreferrer">arXiv</a>
             </div>
-            <div id="abs-hard-core-spectral-expanders" class="pub-detail">We study approximate counting and sampling algorithms for the hard-core model on \(\Delta\)-regular bipartite graphs under a spectral expansion condition. Let \(M_G\) be the biadjacency matrix of \(G\). For every fixed \(\xi\in(0,1)\), we give an FPRAS for the hard-core partition function and an efficient approximate sampler whenever \(\lambda\leq \frac{1-\xi}{\sigma_2(M_G)}\). The main idea is to introduce a family of quadratic tilts in the left-right occupation imbalance and show that each tilted measure can be sampled efficiently using Glauber dynamics. A discrete Gaussian identity expresses the original hard-core model as an exact positive mixture of these tilted measures; truncation and simulated annealing then yield efficient counting and sampling algorithms. For the complementary high-fugacity regime, we refine the polymer-model approach and show that the required phase-dominance and cluster expansion conditions follow from the singular-spectrum bound alone. Combining the two regimes, we obtain efficient approximate counting and sampling at every fugacity \(\lambda&gt;0\) whenever \(\sigma_2(M_G)\leq c\left(\frac{\Delta^2}{\log(\mathrm e\Delta)}\right)^{1/3}\) for an absolute constant \(c&gt;0\). In particular, this recovers all-fugacity algorithms for random \(\Delta\)-regular bipartite graphs for all sufficiently large \(\Delta\), while providing an efficiently verifiable certificate of their success on a given instance.</div>
-            <pre id="bib-hard-core-spectral-expanders" class="pub-detail"><code>@article{NarangPerkins2026hardCoreSpectralExpanders,
-  title = {The Hard-Core Model on Bipartite Spectral Expanders: Counting and Sampling at All Fugacities},
-  author = {Narang, Ijay and Perkins, Will},
-  journal = {arXiv preprint arXiv:2608.03848},
-  year = {2026}
-}</code></pre>
-          </div>
-        </li>
+          </li>
 
-        <li class="publication">
-          <p class="venue"><span class="pub-status pub-status-submission">In submission</span> <span class="pub-date">2026</span></p>
-          <div class="pub-content">
-            <h3>Computational Thresholds for Balanced and Fixed-Slice Independent Sets in Bipartite Graphs</h3>
-            <p class="authors"><strong>Ijay Narang</strong>, Will Perkins, Yuzhou Wang, and Timothy L. H. Wee</p>
-            <div class="pub-actions">
-              <button type="button" class="toggle" data-target="abs-bipartite-independent-sets">Abs</button>
-              <button type="button" class="toggle" data-target="bib-bipartite-independent-sets">Bib</button>
-              <a href="https://arxiv.org/abs/2608.02503" target="_blank" rel="noreferrer">arXiv</a>
-            </div>
-            <div id="abs-bipartite-independent-sets" class="pub-detail">Motivated by recent work of Kocurek, Oveis Gharan, and Tjowasi, which gives an efficient sampling algorithm for the hard-core model on random regular bipartite graphs by decomposing into fixed-size slices, we study the worst-case tractability of approximate counting and sampling of fixed-size slices for bipartite independent set problems. Let \(G=(L\sqcup R,E)\) be a bipartite graph with \(|L|=|R|=n\) and maximum degree \(\Delta\). The fixed-slice problem asks to sample uniformly from independent sets satisfying \(|I\cap L|=\alpha_L n\) and \(|I\cap R|=\alpha_R n\). We show that if the overall density \(\alpha\) lies in the interval \((\frac{1}{\Delta}, \tfrac{1}{2})\), and the densities on the two sides are more balanced than the typical phase densities of a random \(\Delta\)-regular bipartite graph, then there is no FPRAS or efficient sampling scheme unless \(\mathbf{NP}=\mathbf{RP}\). We then study a related fugacity model in which the densities are not fixed, but the independent set is required to be balanced between the two sides of the bipartition. For \(\lambda&gt;0\), the balanced hard-core model is the ordinary hard-core model with fugacity \(\lambda\), conditioned on the event \(|I\cap L|=|I\cap R|\). We prove that this model has the same computational threshold as the hard-core model on general bounded-degree graphs. That is, for every fixed \(\Delta\geq 3\), if \(\lambda&lt;\lambda_c(\Delta)\), then the balanced partition function admits an FPTAS and the balanced hard-core distribution admits an efficient sampling scheme. Conversely, if \(\lambda&gt;\lambda_c(\Delta)\), then no FPRAS or efficient sampler exists on this graph class unless \(\mathbf{NP}=\mathbf{RP}\).</div>
-            <pre id="bib-bipartite-independent-sets" class="pub-detail"><code>@article{NarangPerkinsWangWee2026bipartiteIndependentSets,
-  title = {Computational Thresholds for Balanced and Fixed-Slice Independent Sets in Bipartite Graphs},
-  author = {Narang, Ijay and Perkins, Will and Wang, Yuzhou and Wee, Timothy L. H.},
-  journal = {arXiv preprint arXiv:2608.02503},
-  year = {2026}
-}</code></pre>
-          </div>
-        </li>
-
-        <li class="publication">
-          <p class="venue"><span class="pub-status pub-status-submission">In submission</span> <span class="pub-date">2026</span></p>
-          <div class="pub-content">
-            <h3>Schrijver Number Quasi-Tensorization and Multicolor Ramsey Bounds via Robust OR Polynomials</h3>
-            <p class="authors"><strong>Ijay Narang</strong> and Yukai Tang</p>
-            <div class="pub-actions">
-              <button type="button" class="toggle" data-target="abs-schrijver">Abs</button>
-              <button type="button" class="toggle" data-target="bib-schrijver">Bib</button>
-              <a href="https://arxiv.org/abs/2607.25023" target="_blank" rel="noreferrer">arXiv</a>
-            </div>
-            <div id="abs-schrijver" class="pub-detail">We introduce a robust OR polynomial framework for composing positive semidefinite certificates across OR constraints. We demonstrate the power of this method in two applications. The first is on acute-free families. A set \(\mathcal F=\{(x_i^{(1)},\ldots,x_i^{(r)})\}_{i=1}^M \subseteq (S^{n-1})^r\) is \(r\)-way acute-free if, for every \(i\neq j\), there is a coordinate \(t\in[r]\) such that \(\langle x_i^{(t)},x_j^{(t)}\rangle\leq 0\). We write \(M_r(n)\) for the maximum size of such a set, and \(M_r^{\pm}(n)\) for the hypercube restriction. On the hypercube, \(r\)-way acute-free sets are independent sets for some strong power graph \(G_n^{\boxtimes r}\). The Lov&aacute;sz theta number \(\vartheta(G_n)\) is multiplicative but exponentially loose, whereas the Schrijver number \(\vartheta'(G_n)\) gives the correct order, but is not multiplicative. We bypass this obstruction by proving a general quasi-tensorization result for the Schrijver number. That is, for every collection of graphs \(G_1,\ldots,G_r\) satisfying \(\vartheta'(G_i)\geq 2\), there is an absolute constant \(C\) such that \(\vartheta'(G_1\boxtimes\cdots\boxtimes G_r)\leq\prod_{i=1}^r\vartheta'(G_i)^{C\log r\log\vartheta'(G_i)}\). Applying this result gives that \(M_r^{\pm}(n)\leq M_r(n)\leq(2n)^{C_0r\log r\log(2n)}\) for some absolute constant \(C_0\). The second application is on multicolor Ramsey numbers. The \(r\)-color Ramsey number \(R_r(k)\) is the minimum \(n\) such that every \(r\)-coloring of the edges of the complete graph on \(n\) vertices contains a monochromatic copy of \(K_k\). In a breakthrough result, Balister et al. showed that \(R_r(k)\leq\exp(-\Omega(k/r^{12}))r^{rk}\) via a geometric lemma. By improving the \(r\) dependency in their geometric lemma via the OR polynomial framework, we prove that \(R_r(k)\leq\exp(-\Omega(k/(r^9(\log r)^6)))r^{rk}\).</div>
-            <pre id="bib-schrijver" class="pub-detail"><code>@article{NarangTang2026schrijverQuasiTensorization,
+          <li class="publication">
+            <p class="venue"><span class="pub-status pub-status-submission">In submission</span> <span class="pub-date">2026</span></p>
+            <div class="pub-content">
+              <h4>Schrijver Number Quasi-Tensorization and Multicolor Ramsey Bounds via Robust OR Polynomials</h4>
+              <p class="authors"><strong>Ijay Narang</strong> and Yukai Tang</p>
+              <div class="pub-actions">
+                <button type="button" class="toggle" data-target="abs-schrijver">Abs</button>
+                <button type="button" class="toggle" data-target="bib-schrijver">Bib</button>
+                <a href="https://arxiv.org/abs/2607.25023" target="_blank" rel="noreferrer">arXiv</a>
+              </div>
+              <div id="abs-schrijver" class="pub-detail">We introduce a robust OR polynomial framework for composing positive semidefinite certificates across OR constraints. We demonstrate the power of this method in two applications. The first is on acute-free families. A set \(\mathcal F=\{(x_i^{(1)},\ldots,x_i^{(r)})\}_{i=1}^M \subseteq (S^{n-1})^r\) is \(r\)-way acute-free if, for every \(i\neq j\), there is a coordinate \(t\in[r]\) such that \(\langle x_i^{(t)},x_j^{(t)}\rangle\leq 0\). We write \(M_r(n)\) for the maximum size of such a set, and \(M_r^{\pm}(n)\) for the hypercube restriction. On the hypercube, \(r\)-way acute-free sets are independent sets for some strong power graph \(G_n^{\boxtimes r}\). The Lov&aacute;sz theta number \(\vartheta(G_n)\) is multiplicative but exponentially loose, whereas the Schrijver number \(\vartheta'(G_n)\) gives the correct order, but is not multiplicative. We bypass this obstruction by proving a general quasi-tensorization result for the Schrijver number. That is, for every collection of graphs \(G_1,\ldots,G_r\) satisfying \(\vartheta'(G_i)\geq 2\), there is an absolute constant \(C\) such that \(\vartheta'(G_1\boxtimes\cdots\boxtimes G_r)\leq\prod_{i=1}^r\vartheta'(G_i)^{C\log r\log\vartheta'(G_i)}\). Applying this result gives that \(M_r^{\pm}(n)\leq M_r(n)\leq(2n)^{C_0r\log r\log(2n)}\) for some absolute constant \(C_0\). The second application is on multicolor Ramsey numbers. The \(r\)-color Ramsey number \(R_r(k)\) is the minimum \(n\) such that every \(r\)-coloring of the edges of the complete graph on \(n\) vertices contains a monochromatic copy of \(K_k\). In a breakthrough result, Balister et al. showed that \(R_r(k)\leq\exp(-\Omega(k/r^{12}))r^{rk}\) via a geometric lemma. By improving the \(r\) dependency in their geometric lemma via the OR polynomial framework, we prove that \(R_r(k)\leq\exp(-\Omega(k/(r^9(\log r)^6)))r^{rk}\).</div>
+              <pre id="bib-schrijver" class="pub-detail"><code>@article{NarangTang2026schrijverQuasiTensorization,
   title = {Schrijver Number Quasi-Tensorization and Multicolor Ramsey Bounds via Robust {OR} Polynomials},
   author = {Narang, Ijay and Tang, Yukai},
   journal = {arXiv preprint arXiv:2607.25023},
   year = {2026}
 }</code></pre>
-          </div>
-        </li>
-      </ol>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <section class="pub-subsection" aria-labelledby="tcs-sampling">
+        <h3 id="tcs-sampling">Sampling</h3>
+        <ol class="publications">
+          <li class="publication">
+            <p class="venue"><span class="pub-status pub-status-submission">In submission</span> <span class="pub-date">2026</span></p>
+            <div class="pub-content">
+              <h4>The Hard-Core Model on Bipartite Spectral Expanders: Counting and Sampling at All Fugacities</h4>
+              <p class="authors"><strong>Ijay Narang</strong> and Will Perkins</p>
+              <div class="pub-actions">
+                <button type="button" class="toggle" data-target="abs-hard-core-spectral-expanders">Abs</button>
+                <button type="button" class="toggle" data-target="bib-hard-core-spectral-expanders">Bib</button>
+                <a href="https://arxiv.org/abs/2608.03848" target="_blank" rel="noreferrer">arXiv</a>
+              </div>
+              <div id="abs-hard-core-spectral-expanders" class="pub-detail">We study approximate counting and sampling algorithms for the hard-core model on \(\Delta\)-regular bipartite graphs under a spectral expansion condition. Let \(M_G\) be the biadjacency matrix of \(G\). For every fixed \(\xi\in(0,1)\), we give an FPRAS for the hard-core partition function and an efficient approximate sampler whenever \(\lambda\leq \frac{1-\xi}{\sigma_2(M_G)}\). The main idea is to introduce a family of quadratic tilts in the left-right occupation imbalance and show that each tilted measure can be sampled efficiently using Glauber dynamics. A discrete Gaussian identity expresses the original hard-core model as an exact positive mixture of these tilted measures; truncation and simulated annealing then yield efficient counting and sampling algorithms. For the complementary high-fugacity regime, we refine the polymer-model approach and show that the required phase-dominance and cluster expansion conditions follow from the singular-spectrum bound alone. Combining the two regimes, we obtain efficient approximate counting and sampling at every fugacity \(\lambda&gt;0\) whenever \(\sigma_2(M_G)\leq c\left(\frac{\Delta^2}{\log(\mathrm e\Delta)}\right)^{1/3}\) for an absolute constant \(c&gt;0\). In particular, this recovers all-fugacity algorithms for random \(\Delta\)-regular bipartite graphs for all sufficiently large \(\Delta\), while providing an efficiently verifiable certificate of their success on a given instance.</div>
+              <pre id="bib-hard-core-spectral-expanders" class="pub-detail"><code>@article{NarangPerkins2026hardCoreSpectralExpanders,
+  title = {The Hard-Core Model on Bipartite Spectral Expanders: Counting and Sampling at All Fugacities},
+  author = {Narang, Ijay and Perkins, Will},
+  journal = {arXiv preprint arXiv:2608.03848},
+  year = {2026}
+}</code></pre>
+            </div>
+          </li>
+
+          <li class="publication">
+            <p class="venue"><span class="pub-status pub-status-submission">In submission</span> <span class="pub-date">2026</span></p>
+            <div class="pub-content">
+              <h4>Computational Thresholds for Balanced and Fixed-Slice Independent Sets in Bipartite Graphs</h4>
+              <p class="authors"><strong>Ijay Narang</strong>, Will Perkins, Yuzhou Wang, and Timothy L. H. Wee</p>
+              <div class="pub-actions">
+                <button type="button" class="toggle" data-target="abs-bipartite-independent-sets">Abs</button>
+                <button type="button" class="toggle" data-target="bib-bipartite-independent-sets">Bib</button>
+                <a href="https://arxiv.org/abs/2608.02503" target="_blank" rel="noreferrer">arXiv</a>
+              </div>
+              <div id="abs-bipartite-independent-sets" class="pub-detail">Motivated by recent work of Kocurek, Oveis Gharan, and Tjowasi, which gives an efficient sampling algorithm for the hard-core model on random regular bipartite graphs by decomposing into fixed-size slices, we study the worst-case tractability of approximate counting and sampling of fixed-size slices for bipartite independent set problems. Let \(G=(L\sqcup R,E)\) be a bipartite graph with \(|L|=|R|=n\) and maximum degree \(\Delta\). The fixed-slice problem asks to sample uniformly from independent sets satisfying \(|I\cap L|=\alpha_L n\) and \(|I\cap R|=\alpha_R n\). We show that if the overall density \(\alpha\) lies in the interval \((\frac{1}{\Delta}, \tfrac{1}{2})\), and the densities on the two sides are more balanced than the typical phase densities of a random \(\Delta\)-regular bipartite graph, then there is no FPRAS or efficient sampling scheme unless \(\mathbf{NP}=\mathbf{RP}\). We then study a related fugacity model in which the densities are not fixed, but the independent set is required to be balanced between the two sides of the bipartition. For \(\lambda&gt;0\), the balanced hard-core model is the ordinary hard-core model with fugacity \(\lambda\), conditioned on the event \(|I\cap L|=|I\cap R|\). We prove that this model has the same computational threshold as the hard-core model on general bounded-degree graphs. That is, for every fixed \(\Delta\geq 3\), if \(\lambda&lt;\lambda_c(\Delta)\), then the balanced partition function admits an FPTAS and the balanced hard-core distribution admits an efficient sampling scheme. Conversely, if \(\lambda&gt;\lambda_c(\Delta)\), then no FPRAS or efficient sampler exists on this graph class unless \(\mathbf{NP}=\mathbf{RP}\).</div>
+              <pre id="bib-bipartite-independent-sets" class="pub-detail"><code>@article{NarangPerkinsWangWee2026bipartiteIndependentSets,
+  title = {Computational Thresholds for Balanced and Fixed-Slice Independent Sets in Bipartite Graphs},
+  author = {Narang, Ijay and Perkins, Will and Wang, Yuzhou and Wee, Timothy L. H.},
+  journal = {arXiv preprint arXiv:2608.02503},
+  year = {2026}
+}</code></pre>
+            </div>
+          </li>
+        </ol>
+      </section>
     </section>
 
     <section class="pub-year">
