@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Teaching | Ijay Narang</title>
-  <meta name="description" content="Teaching experience by Ijay Narang.">
+  <title>CV | Ijay Narang</title>
+  <meta name="description" content="Curriculum vitae for Ijay Narang.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,500;8..60,650&display=swap" rel="stylesheet">
@@ -19,28 +19,32 @@
     <nav class="nav" aria-label="Main navigation">
       <a href="./">About</a>
       <a href="publications.html">Publications</a>
-      <a class="active" href="teaching.html">Teaching</a>
-      <a href="cv.html">CV</a>
+      <a href="teaching.html">Teaching</a>
+      <a class="active" href="cv.html">CV</a>
     </nav>
     <button class="theme-toggle" type="button" aria-label="Switch color theme" aria-pressed="false" title="Switch color theme">☾</button>
   </header>
 
   <main class="page narrow">
-    <section class="page-title">
-      <p class="eyebrow">Teaching</p>
-      <h1>Teaching</h1>
+    <section class="page-title cv-page-title">
+      <div>
+        <p class="eyebrow">Curriculum Vitae</p>
+        <h1>CV</h1>
+      </div>
+      <div class="cv-actions" aria-label="CV downloads">
+        <a class="button-link button-link-primary" href="CV/IjayNarangCV.pdf" download>Download PDF</a>
+        <a class="button-link" href="CV/IjayNarangCV.docx" download>Download Word</a>
+      </div>
     </section>
 
-    <section class="section">
-      <ul class="timeline">
-        <li><span>Fall 2024</span> UCA for COS 326 (Functional Programming) and Lab TA for COS 240 (Intro to TCS)</li>
-        <li><span>Spring 2024</span> Lab TA for COS 240 and Grader for COS 445 (Algorithmic Game Theory)</li>
-        <li><span>Spring 2023</span> COS 445 Grader</li>
-        <li><span>Fall 2022</span> COS 445 Grader</li>
-        <li><span>Spring 2022</span> COS 126 (Intro to Programming) Grader</li>
-      </ul>
+    <section class="cv-document" aria-label="CV preview">
+      <iframe class="cv-frame" src="CV/IjayNarangCV.pdf#view=FitH" title="Ijay Narang curriculum vitae"></iframe>
+      <p class="cv-fallback">
+        If the preview does not load, <a href="CV/IjayNarangCV.pdf">open the CV as a PDF</a>.
+      </p>
     </section>
   </main>
+
   <script src="assets/js/site.js"></script>
 </body>
 </html>

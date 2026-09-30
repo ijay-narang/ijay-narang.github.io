@@ -29,14 +29,23 @@
       <a href="./">About</a>
       <a class="active" href="publications.html">Publications</a>
       <a href="teaching.html">Teaching</a>
+      <a href="cv.html">CV</a>
     </nav>
     <button class="theme-toggle" type="button" aria-label="Switch color theme" aria-pressed="false" title="Switch color theme">☾</button>
   </header>
 
   <main class="page">
     <section class="pub-year">
-      <h2>Applied Probability &amp; Statistics</h2>
+      <h2>Machine Learning</h2>
       <ol class="publications">
+        <li class="publication">
+          <p class="venue"><span class="pub-status pub-status-submission">In submission to ICLR</span> <span class="pub-date">2027</span></p>
+          <div class="pub-content">
+            <h3>GlimpseBC: Learning Saccadic Visual Policies from Global View Demonstrations</h3>
+            <p class="authors"><strong>Ijay Narang</strong> and Jia Deng</p>
+          </div>
+        </li>
+
         <li class="publication">
           <p class="venue"><span class="pub-status pub-status-conference">ICML</span> <span class="pub-date">2026</span></p>
           <div class="pub-content">
@@ -57,8 +66,14 @@
           </div>
         </li>
 
+      </ol>
+    </section>
+
+    <section class="pub-year">
+      <h2>Statistical Physics</h2>
+      <ol class="publications">
         <li class="publication">
-          <p class="venue"><span class="pub-status pub-status-submission">Preprint</span> <span class="pub-date">2026</span></p>
+          <p class="venue"><span class="pub-status pub-status-submission">In submission to ALT</span> <span class="pub-date">2027</span></p>
           <div class="pub-content">
             <h3>Optimal detection of planted stars via a random energy model</h3>
             <p class="authors"><strong>Ijay Narang</strong>, Will Perkins, and Timothy Wee</p>
@@ -76,83 +91,11 @@
 }</code></pre>
           </div>
         </li>
-      </ol>
-    </section>
 
-    <section class="pub-year">
-      <h2>Theoretical Computer Science</h2>
-      <section class="pub-subsection" aria-labelledby="tcs-optimization">
-        <h3 id="tcs-optimization">Optimization</h3>
-        <ol class="publications">
-          <li class="publication">
-            <p class="venue"><span class="pub-status pub-status-submission">Preprint</span> <span class="pub-date">2026</span></p>
-            <div class="pub-content">
-              <h4>Improved SDP Coloring of 3-Colorable Graphs from Recursive Gaussian Certificates</h4>
-              <p class="authors"><strong>Ijay Narang</strong> and Yukai Tang</p>
-              <div class="pub-actions">
-                <button type="button" class="toggle" data-target="abs-recursive-gaussian-certificates">Abs</button>
-                <button type="button" class="toggle" data-target="bib-recursive-gaussian-certificates">Bib</button>
-                <a href="https://arxiv.org/abs/2609.33684" target="_blank" rel="noreferrer">arXiv</a>
-              </div>
-              <div id="abs-recursive-gaussian-certificates" class="pub-detail">We give a randomized polynomial-time algorithm that, for every fixed \(\varepsilon &gt; 0\), colors every \(3\)-colorable \(n\)-vertex graph using \(O\bigl(n^{(13-\sqrt{97})/18+\varepsilon}\bigr) \approx O\bigl(n^{0.17506+\varepsilon}\bigr)\) colors, improving upon the previous best bound of \(O(n^{0.19539})\) from Bansal, Huang, and Lee. Our improvement comes from analyzing higher-level neighborhoods through a recursive description of failure in Gaussian SDP rounding. If the rounding returns too small an independent set, it produces local Gaussian certificates at every vertex of a nonempty induced subgraph. We propagate these certificates along walks to higher-level neighborhoods by defining a recursive certificate structure and proving a strengthened cover-composition lemma, which refines the one of Arora, Chlamt&aacute;&#269;, and Charikar. We then construct a bounded potential function that increases by a fixed positive amount at every propagation step, yielding a contradiction. Consequently, the rounding must produce a sufficiently large independent set.</div>
-              <pre id="bib-recursive-gaussian-certificates" class="pub-detail"><code>@article{NarangTang2026improvedSDPColoring,
-  title = {Improved {SDP} Coloring of 3-Colorable Graphs from Recursive Gaussian Certificates},
-  author = {Narang, Ijay and Tang, Yukai},
-  journal = {arXiv preprint arXiv:2609.33684},
-  year = {2026}
-}</code></pre>
-            </div>
-          </li>
-
-          <li class="publication">
-            <p class="venue"><span class="pub-status pub-status-submission">In submission to SICON</span> <span class="pub-date">2026</span></p>
-            <div class="pub-content">
-              <h4>Complexity Of Output Feedback Stabilization</h4>
-              <p class="authors">Amir Ali Ahmadi, Abraar Chaudhry, <strong>Ijay Narang</strong>, and Yukai Tang</p>
-              <div class="pub-actions">
-                <button type="button" class="toggle" data-target="abs-output-feedback-stabilization">Abs</button>
-                <button type="button" class="toggle" data-target="bib-output-feedback-stabilization">Bib</button>
-                <a href="https://arxiv.org/abs/2609.20636" target="_blank" rel="noreferrer">arXiv</a>
-              </div>
-              <div id="abs-output-feedback-stabilization" class="pub-detail">We show that unless P = NP, there cannot be a polynomial-time (or even pseudo-polynomial-time) algorithm for output feedback stabilization of a linear dynamical system with a linear controller. This settles one of the best-known open problems in control theory. The result holds in both continuous and discrete time. We also present a family of stabilizable linear dynamical systems for which no polynomial-time algorithm can write down a stabilizing controller in its standard representation.</div>
-              <pre id="bib-output-feedback-stabilization" class="pub-detail"><code>@article{AhmadiChaudhryNarangTang2026outputFeedback,
-  title = {Complexity Of Output Feedback Stabilization},
-  author = {Ahmadi, Amir Ali and Chaudhry, Abraar and Narang, Ijay and Tang, Yukai},
-  journal = {arXiv preprint arXiv:2609.20636},
-  year = {2026}
-}</code></pre>
-            </div>
-          </li>
-
-          <li class="publication">
-            <p class="venue"><span class="pub-status pub-status-submission">Preprint</span> <span class="pub-date">2026</span></p>
-            <div class="pub-content">
-              <h4>Schrijver Number Quasi-Tensorization and Multicolor Ramsey Bounds via Robust OR Polynomials</h4>
-              <p class="authors"><strong>Ijay Narang</strong> and Yukai Tang</p>
-              <div class="pub-actions">
-                <button type="button" class="toggle" data-target="abs-schrijver">Abs</button>
-                <button type="button" class="toggle" data-target="bib-schrijver">Bib</button>
-                <a href="https://arxiv.org/abs/2607.25023" target="_blank" rel="noreferrer">arXiv</a>
-              </div>
-              <div id="abs-schrijver" class="pub-detail">We introduce a robust OR polynomial framework for composing positive semidefinite certificates across OR constraints. We demonstrate the power of this method in two applications. The first is on acute-free families. A set \(\mathcal F=\{(x_i^{(1)},\ldots,x_i^{(r)})\}_{i=1}^M \subseteq (S^{n-1})^r\) is \(r\)-way acute-free if, for every \(i\neq j\), there is a coordinate \(t\in[r]\) such that \(\langle x_i^{(t)},x_j^{(t)}\rangle\leq 0\). We write \(M_r(n)\) for the maximum size of such a set, and \(M_r^{\pm}(n)\) for the hypercube restriction. On the hypercube, \(r\)-way acute-free sets are independent sets for some strong power graph \(G_n^{\boxtimes r}\). The Lov&aacute;sz theta number \(\vartheta(G_n)\) is multiplicative but exponentially loose, whereas the Schrijver number \(\vartheta'(G_n)\) gives the correct order, but is not multiplicative. We bypass this obstruction by proving a general quasi-tensorization result for the Schrijver number. That is, for every collection of graphs \(G_1,\ldots,G_r\) satisfying \(\vartheta'(G_i)\geq 2\), there is an absolute constant \(C\) such that \(\vartheta'(G_1\boxtimes\cdots\boxtimes G_r)\leq\prod_{i=1}^r\vartheta'(G_i)^{C\log r\log\vartheta'(G_i)}\). Applying this result gives that \(M_r^{\pm}(n)\leq M_r(n)\leq(2n)^{C_0r\log r\log(2n)}\) for some absolute constant \(C_0\). The second application is on multicolor Ramsey numbers. The \(r\)-color Ramsey number \(R_r(k)\) is the minimum \(n\) such that every \(r\)-coloring of the edges of the complete graph on \(n\) vertices contains a monochromatic copy of \(K_k\). In a breakthrough result, Balister et al. showed that \(R_r(k)\leq\exp(-\Omega(k/r^{12}))r^{rk}\) via a geometric lemma. By improving the \(r\) dependency in their geometric lemma via the OR polynomial framework, we prove that \(R_r(k)\leq\exp(-\Omega(k/(r^9(\log r)^6)))r^{rk}\).</div>
-              <pre id="bib-schrijver" class="pub-detail"><code>@article{NarangTang2026schrijverQuasiTensorization,
-  title = {Schrijver Number Quasi-Tensorization and Multicolor Ramsey Bounds via Robust {OR} Polynomials},
-  author = {Narang, Ijay and Tang, Yukai},
-  journal = {arXiv preprint arXiv:2607.25023},
-  year = {2026}
-}</code></pre>
-            </div>
-          </li>
-        </ol>
-      </section>
-
-      <section class="pub-subsection" aria-labelledby="tcs-sampling">
-        <h3 id="tcs-sampling">Sampling and Counting</h3>
-        <ol class="publications">
-          <li class="publication">
+        <li class="publication">
             <p class="venue"><span class="pub-status pub-status-conference">SODA</span> <span class="pub-date">2027</span></p>
             <div class="pub-content">
-              <h4>Computational Thresholds for Balanced and Fixed-Slice Independent Sets in Bipartite Graphs</h4>
+              <h3>Computational Thresholds for Balanced and Fixed-Slice Independent Sets in Bipartite Graphs</h3>
               <p class="authors"><strong>Ijay Narang</strong>, Will Perkins, Yuzhou Wang, and Timothy L. H. Wee</p>
               <div class="pub-actions">
                 <button type="button" class="toggle" data-target="abs-bipartite-independent-sets">Abs</button>
@@ -172,7 +115,7 @@
           <li class="publication">
             <p class="venue"><span class="pub-status pub-status-submission">Preprint</span> <span class="pub-date">2026</span></p>
             <div class="pub-content">
-              <h4>Structural Corrections to the Bethe Approximation of the Permanent</h4>
+              <h3>Structural Corrections to the Bethe Approximation of the Permanent</h3>
               <p class="authors"><strong>Ijay Narang</strong> and Will Perkins</p>
               <div class="pub-actions">
                 <button type="button" class="toggle" data-target="abs-structural-corrections-bethe">Abs</button>
@@ -192,7 +135,7 @@
           <li class="publication">
             <p class="venue"><span class="pub-status pub-status-submission">Preprint</span> <span class="pub-date">2026</span></p>
             <div class="pub-content">
-              <h4>The Hard-Core Model on Bipartite Spectral Expanders: Counting and Sampling at All Fugacities</h4>
+              <h3>The Hard-Core Model on Bipartite Spectral Expanders: Counting and Sampling at All Fugacities</h3>
               <p class="authors"><strong>Ijay Narang</strong> and Will Perkins</p>
               <div class="pub-actions">
                 <button type="button" class="toggle" data-target="abs-hard-core-spectral-expanders">Abs</button>
@@ -208,8 +151,72 @@
 }</code></pre>
             </div>
           </li>
-        </ol>
-      </section>
+      </ol>
+    </section>
+
+    <section class="pub-year">
+      <h2>Optimization</h2>
+      <ol class="publications">
+        <li class="publication">
+          <p class="venue"><span class="pub-status pub-status-submission">Preprint</span> <span class="pub-date">2026</span></p>
+          <div class="pub-content">
+            <h3>Improved SDP Coloring of 3-Colorable Graphs from Recursive Gaussian Certificates</h3>
+            <p class="authors"><strong>Ijay Narang</strong> and Yukai Tang</p>
+            <div class="pub-actions">
+              <button type="button" class="toggle" data-target="abs-recursive-gaussian-certificates">Abs</button>
+              <button type="button" class="toggle" data-target="bib-recursive-gaussian-certificates">Bib</button>
+              <a href="https://arxiv.org/abs/2609.33684" target="_blank" rel="noreferrer">arXiv</a>
+            </div>
+            <div id="abs-recursive-gaussian-certificates" class="pub-detail">We give a randomized polynomial-time algorithm that, for every fixed \(\varepsilon &gt; 0\), colors every \(3\)-colorable \(n\)-vertex graph using \(O\bigl(n^{(13-\sqrt{97})/18+\varepsilon}\bigr) \approx O\bigl(n^{0.17506+\varepsilon}\bigr)\) colors, improving upon the previous best bound of \(O(n^{0.19539})\) from Bansal, Huang, and Lee. Our improvement comes from analyzing higher-level neighborhoods through a recursive description of failure in Gaussian SDP rounding. If the rounding returns too small an independent set, it produces local Gaussian certificates at every vertex of a nonempty induced subgraph. We propagate these certificates along walks to higher-level neighborhoods by defining a recursive certificate structure and proving a strengthened cover-composition lemma, which refines the one of Arora, Chlamt&aacute;&#269;, and Charikar. We then construct a bounded potential function that increases by a fixed positive amount at every propagation step, yielding a contradiction. Consequently, the rounding must produce a sufficiently large independent set.</div>
+            <pre id="bib-recursive-gaussian-certificates" class="pub-detail"><code>@article{NarangTang2026improvedSDPColoring,
+  title = {Improved {SDP} Coloring of 3-Colorable Graphs from Recursive Gaussian Certificates},
+  author = {Narang, Ijay and Tang, Yukai},
+  journal = {arXiv preprint arXiv:2609.33684},
+  year = {2026}
+}</code></pre>
+          </div>
+        </li>
+
+        <li class="publication">
+          <p class="venue"><span class="pub-status pub-status-submission">In submission to SICON</span> <span class="pub-date">2026</span></p>
+          <div class="pub-content">
+            <h3>Complexity Of Output Feedback Stabilization</h3>
+            <p class="authors">Amir Ali Ahmadi, Abraar Chaudhry, <strong>Ijay Narang</strong>, and Yukai Tang</p>
+            <div class="pub-actions">
+              <button type="button" class="toggle" data-target="abs-output-feedback-stabilization">Abs</button>
+              <button type="button" class="toggle" data-target="bib-output-feedback-stabilization">Bib</button>
+              <a href="https://arxiv.org/abs/2609.20636" target="_blank" rel="noreferrer">arXiv</a>
+            </div>
+            <div id="abs-output-feedback-stabilization" class="pub-detail">We show that unless P = NP, there cannot be a polynomial-time (or even pseudo-polynomial-time) algorithm for output feedback stabilization of a linear dynamical system with a linear controller. This settles one of the best-known open problems in control theory. The result holds in both continuous and discrete time. We also present a family of stabilizable linear dynamical systems for which no polynomial-time algorithm can write down a stabilizing controller in its standard representation.</div>
+            <pre id="bib-output-feedback-stabilization" class="pub-detail"><code>@article{AhmadiChaudhryNarangTang2026outputFeedback,
+  title = {Complexity Of Output Feedback Stabilization},
+  author = {Ahmadi, Amir Ali and Chaudhry, Abraar and Narang, Ijay and Tang, Yukai},
+  journal = {arXiv preprint arXiv:2609.20636},
+  year = {2026}
+}</code></pre>
+          </div>
+        </li>
+
+        <li class="publication">
+          <p class="venue"><span class="pub-status pub-status-submission">Preprint</span> <span class="pub-date">2026</span></p>
+          <div class="pub-content">
+            <h3>Schrijver Number Quasi-Tensorization and Multicolor Ramsey Bounds via Robust OR Polynomials</h3>
+            <p class="authors"><strong>Ijay Narang</strong> and Yukai Tang</p>
+            <div class="pub-actions">
+              <button type="button" class="toggle" data-target="abs-schrijver">Abs</button>
+              <button type="button" class="toggle" data-target="bib-schrijver">Bib</button>
+              <a href="https://arxiv.org/abs/2607.25023" target="_blank" rel="noreferrer">arXiv</a>
+            </div>
+            <div id="abs-schrijver" class="pub-detail">We introduce a robust OR polynomial framework for composing positive semidefinite certificates across OR constraints. We demonstrate the power of this method in two applications. The first is on acute-free families. A set \(\mathcal F=\{(x_i^{(1)},\ldots,x_i^{(r)})\}_{i=1}^M \subseteq (S^{n-1})^r\) is \(r\)-way acute-free if, for every \(i\neq j\), there is a coordinate \(t\in[r]\) such that \(\langle x_i^{(t)},x_j^{(t)}\rangle\leq 0\). We write \(M_r(n)\) for the maximum size of such a set, and \(M_r^{\pm}(n)\) for the hypercube restriction. On the hypercube, \(r\)-way acute-free sets are independent sets for some strong power graph \(G_n^{\boxtimes r}\). The Lov&aacute;sz theta number \(\vartheta(G_n)\) is multiplicative but exponentially loose, whereas the Schrijver number \(\vartheta'(G_n)\) gives the correct order, but is not multiplicative. We bypass this obstruction by proving a general quasi-tensorization result for the Schrijver number. That is, for every collection of graphs \(G_1,\ldots,G_r\) satisfying \(\vartheta'(G_i)\geq 2\), there is an absolute constant \(C\) such that \(\vartheta'(G_1\boxtimes\cdots\boxtimes G_r)\leq\prod_{i=1}^r\vartheta'(G_i)^{C\log r\log\vartheta'(G_i)}\). Applying this result gives that \(M_r^{\pm}(n)\leq M_r(n)\leq(2n)^{C_0r\log r\log(2n)}\) for some absolute constant \(C_0\). The second application is on multicolor Ramsey numbers. The \(r\)-color Ramsey number \(R_r(k)\) is the minimum \(n\) such that every \(r\)-coloring of the edges of the complete graph on \(n\) vertices contains a monochromatic copy of \(K_k\). In a breakthrough result, Balister et al. showed that \(R_r(k)\leq\exp(-\Omega(k/r^{12}))r^{rk}\) via a geometric lemma. By improving the \(r\) dependency in their geometric lemma via the OR polynomial framework, we prove that \(R_r(k)\leq\exp(-\Omega(k/(r^9(\log r)^6)))r^{rk}\).</div>
+            <pre id="bib-schrijver" class="pub-detail"><code>@article{NarangTang2026schrijverQuasiTensorization,
+  title = {Schrijver Number Quasi-Tensorization and Multicolor Ramsey Bounds via Robust {OR} Polynomials},
+  author = {Narang, Ijay and Tang, Yukai},
+  journal = {arXiv preprint arXiv:2607.25023},
+  year = {2026}
+}</code></pre>
+          </div>
+        </li>
+      </ol>
     </section>
 
     <section class="pub-year">
