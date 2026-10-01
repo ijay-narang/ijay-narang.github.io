@@ -229,6 +229,26 @@ a:hover {
   margin-top: 42px;
 }
 
+.fun-facts {
+  margin-top: 54px;
+  padding-top: 28px;
+  border-top: 1px solid var(--line);
+}
+
+.fun-facts .section-heading h2 {
+  margin-bottom: 8px;
+}
+
+.fun-facts-note {
+  margin: 0 0 10px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.fun-facts .plain-list {
+  max-width: 76ch;
+}
+
 /* Research Direction styles are saved for later publication.
 .research-direction p {
   max-width: 75ch;
