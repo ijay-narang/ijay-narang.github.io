@@ -38,11 +38,31 @@
     <section class="pub-year">
       <h2>Machine Learning</h2>
       <ol class="publications">
-        <li class="publication">
+        <li class="publication" id="glimpsebc">
           <p class="venue"><span class="pub-status pub-status-submission">In submission to ICLR</span> <span class="pub-date">2027</span></p>
           <div class="pub-content">
             <h3>GlimpseBC: Learning Saccadic Visual Policies from Global View Demonstrations</h3>
             <p class="authors"><strong>Ijay Narang</strong> and Jia Deng</p>
+          </div>
+        </li>
+
+        <li class="publication">
+          <p class="venue"><span class="pub-status pub-status-submission">Preprint</span> <span class="pub-date">2026</span></p>
+          <div class="pub-content">
+            <h3>Hob-VL: A Benchmark for Visually Grounded Boolean Reasoning</h3>
+            <p class="authors">Yuzhou Wang, Emile Anand, and <strong>Ijay Narang</strong></p>
+            <div class="pub-actions">
+              <button type="button" class="toggle" data-target="abs-hob-vl">Abs</button>
+              <button type="button" class="toggle" data-target="bib-hob-vl">Bib</button>
+              <a href="https://arxiv.org/abs/2610.01605" target="_blank" rel="noreferrer">arXiv</a>
+            </div>
+            <div id="abs-hob-vl" class="pub-detail">Reliable visual reasoning requires composing multiple visual observations and returning consistent answers to logically equivalent questions. We introduce Hob-VL, a benchmark for visually grounded Boolean reasoning. Hob-VL comprises two tasks: (1) evaluating whether a Boolean rule holds in an image, and (2) identifying the (unique) object satisfying a Boolean description. Hob-VL contains 6,000 human-verified balanced Yes/No questions, each defined by a Boolean combination of ten visual statements, across 1,000 generated scenes and 46 diverse labeled photographs, along with 1,000 object-identification questions over the same photographs. Our question families are deliberately constructed to challenge reasoning through misleading local cues and nested logical operations, and include symbolic and structured natural-language presentations. Across eight model configurations with thinking disabled or minimized, Boolean accuracy ranges from 48.52% to 50.57%, while the identification accuracy reaches at most 43.0%. A thinking-enabled GLM configuration achieves uneven gains while retaining substantial errors and inconsistencies. Hob-VL exposes these failures through executable reference answers and matched evaluations.</div>
+            <pre id="bib-hob-vl" class="pub-detail"><code>@article{WangAnandNarang2026hobVL,
+  title = {{Hob-VL}: A Benchmark for Visually Grounded Boolean Reasoning},
+  author = {Wang, Yuzhou and Anand, Emile and Narang, Ijay},
+  journal = {arXiv preprint arXiv:2610.01605},
+  year = {2026}
+}</code></pre>
           </div>
         </li>
 
