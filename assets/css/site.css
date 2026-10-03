@@ -229,6 +229,15 @@ a:hover {
   margin-top: 42px;
 }
 
+.research-interests > p {
+  max-width: 76ch;
+  margin: 0 0 18px;
+}
+
+.research-interests > p:last-child {
+  margin-bottom: 0;
+}
+
 .fun-facts {
   margin-top: 54px;
   padding-top: 28px;
