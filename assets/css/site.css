@@ -351,9 +351,14 @@ a:hover {
   border-top: 1px solid var(--line);
 }
 
-.timeline span {
-  display: inline-block;
-  min-width: 110px;
+.timeline li {
+  display: grid;
+  grid-template-columns: 130px minmax(0, 1fr);
+  column-gap: 24px;
+}
+
+.timeline li > span {
+  white-space: nowrap;
   color: var(--accent);
   font-weight: 700;
 }
@@ -634,6 +639,11 @@ code {
 }
 
 @media (max-width: 600px) {
+  .timeline li {
+    grid-template-columns: minmax(0, 1fr);
+    row-gap: 4px;
+  }
+
   .pub-year + .pub-year {
     margin-top: 48px;
   }
