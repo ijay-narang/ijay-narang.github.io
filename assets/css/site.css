@@ -306,6 +306,7 @@ a:hover {
 }
 
 .pub-content {
+  grid-column: -2 / -1;
   min-width: 0;
 }
 
