@@ -38,10 +38,23 @@
     <section class="pub-year">
       <h2>Machine Learning</h2>
       <ol class="publications">
-        <li class="publication" id="glimpsebc">
+        <li class="publication">
+          <p class="venue"><span class="pub-status pub-status-conference">ICML</span> <span class="pub-date">2026</span></p>
           <div class="pub-content">
-            <h3>GlimpseBC: Learning Saccadic Visual Policies from Global View Demonstrations</h3>
-            <p class="authors"><strong>Ijay Narang</strong> and Jia Deng</p>
+            <h3>Steady-State Behavior of Constant-Stepsize Stochastic Approximation: Gaussian Approximation and Tail Bounds</h3>
+            <p class="authors">Zedong Wang, Yuyang Wang, <strong>Ijay Narang</strong>, Felix Wang, Yuzhou Wang, and Siva Theja Maguluri</p>
+            <div class="pub-actions">
+              <button type="button" class="toggle" data-target="abs-sa">Abs</button>
+              <button type="button" class="toggle" data-target="bib-sa">Bib</button>
+              <a href="https://arxiv.org/abs/2602.13960" target="_blank" rel="noreferrer">arXiv</a>
+            </div>
+            <div id="abs-sa" class="pub-detail">Constant-stepsize stochastic approximation (SA) is widely used in learning for computational efficiency. For a fixed stepsize, the iterates typically admit a stationary distribution that is rarely tractable. Prior work shows that as the stepsize \(\alpha \downarrow 0\), the centered-and-scaled steady state converges weakly to a Gaussian random vector. However, for fixed \(\alpha\), this weak convergence offers no usable error bound for approximating the steady-state by its Gaussian limit. This paper provides explicit, non-asymptotic error bounds for fixed \(\alpha\). We first prove general-purpose theorems that bound the Wasserstein distance between the centered-scaled steady state and an appropriate Gaussian distribution, under regularity conditions for drift and moment conditions for noise. To ensure broad applicability, we cover both i.i.d. and Markovian noise models. We then instantiate these theorems for three representative SA settings: (1) stochastic gradient descent (SGD) for smooth strongly convex objectives, (2) linear SA, and (3) contractive nonlinear SA. We obtain dimension- and stepsize-dependent, explicit bounds in Wasserstein distance of order \(\alpha^{1/2}\log(1/\alpha)\) for small \(\alpha\). Building on the Wasserstein approximation error, we further derive non-uniform Berry--Esseen-type tail bounds that compare the steady-state tail probability to Gaussian tails. We achieve an explicit error term that decays in both the deviation level and stepsize \(\alpha\). We adapt the same analysis for SGD beyond strongly convexity and study general convex objectives. We identify a non-Gaussian (Gibbs) limiting law under the correct scaling, which is validated numerically, and provide a corresponding pre-limit Wasserstein error bound.</div>
+            <pre id="bib-sa" class="pub-detail"><code>@article{WangWangNarangWangWangMaguluri2026constantStepsize,
+  title = {Steady-State Behavior of Constant-Stepsize Stochastic Approximation: Gaussian Approximation and Tail Bounds},
+  author = {Wang, Zedong and Wang, Yuyang and Narang, Ijay and Wang, Felix and Wang, Yuzhou and Maguluri, Siva Theja},
+  journal = {arXiv preprint arXiv:2602.13960},
+  year = {2026}
+}</code></pre>
           </div>
         </li>
 
@@ -60,26 +73,6 @@
   title = {{Hob-VL}: A Benchmark for Visually Grounded Boolean Reasoning},
   author = {Wang, Yuzhou and Anand, Emile and Narang, Ijay},
   journal = {arXiv preprint arXiv:2610.01605},
-  year = {2026}
-}</code></pre>
-          </div>
-        </li>
-
-        <li class="publication">
-          <p class="venue"><span class="pub-status pub-status-conference">ICML</span> <span class="pub-date">2026</span></p>
-          <div class="pub-content">
-            <h3>Steady-State Behavior of Constant-Stepsize Stochastic Approximation: Gaussian Approximation and Tail Bounds</h3>
-            <p class="authors">Zedong Wang, Yuyang Wang, <strong>Ijay Narang</strong>, Felix Wang, Yuzhou Wang, and Siva Theja Maguluri</p>
-            <div class="pub-actions">
-              <button type="button" class="toggle" data-target="abs-sa">Abs</button>
-              <button type="button" class="toggle" data-target="bib-sa">Bib</button>
-              <a href="https://arxiv.org/abs/2602.13960" target="_blank" rel="noreferrer">arXiv</a>
-            </div>
-            <div id="abs-sa" class="pub-detail">Constant-stepsize stochastic approximation (SA) is widely used in learning for computational efficiency. For a fixed stepsize, the iterates typically admit a stationary distribution that is rarely tractable. Prior work shows that as the stepsize \(\alpha \downarrow 0\), the centered-and-scaled steady state converges weakly to a Gaussian random vector. However, for fixed \(\alpha\), this weak convergence offers no usable error bound for approximating the steady-state by its Gaussian limit. This paper provides explicit, non-asymptotic error bounds for fixed \(\alpha\). We first prove general-purpose theorems that bound the Wasserstein distance between the centered-scaled steady state and an appropriate Gaussian distribution, under regularity conditions for drift and moment conditions for noise. To ensure broad applicability, we cover both i.i.d. and Markovian noise models. We then instantiate these theorems for three representative SA settings: (1) stochastic gradient descent (SGD) for smooth strongly convex objectives, (2) linear SA, and (3) contractive nonlinear SA. We obtain dimension- and stepsize-dependent, explicit bounds in Wasserstein distance of order \(\alpha^{1/2}\log(1/\alpha)\) for small \(\alpha\). Building on the Wasserstein approximation error, we further derive non-uniform Berry--Esseen-type tail bounds that compare the steady-state tail probability to Gaussian tails. We achieve an explicit error term that decays in both the deviation level and stepsize \(\alpha\). We adapt the same analysis for SGD beyond strongly convexity and study general convex objectives. We identify a non-Gaussian (Gibbs) limiting law under the correct scaling, which is validated numerically, and provide a corresponding pre-limit Wasserstein error bound.</div>
-            <pre id="bib-sa" class="pub-detail"><code>@article{WangWangNarangWangWangMaguluri2026constantStepsize,
-  title = {Steady-State Behavior of Constant-Stepsize Stochastic Approximation: Gaussian Approximation and Tail Bounds},
-  author = {Wang, Zedong and Wang, Yuyang and Narang, Ijay and Wang, Felix and Wang, Yuzhou and Maguluri, Siva Theja},
-  journal = {arXiv preprint arXiv:2602.13960},
   year = {2026}
 }</code></pre>
           </div>
