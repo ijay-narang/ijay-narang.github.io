@@ -1,1 +1,5 @@
 output/
+
+# Keep resume files and their preview local only.
+/CV/
+/cv.html
